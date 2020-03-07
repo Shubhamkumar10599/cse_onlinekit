@@ -1,0 +1,258 @@
+
+.navbar1 {
+  width: 100%;
+  background-color:#4285F4;
+    position: fixed;
+overflow:auto;
+}
+
+.navbar1 a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+a.navItem{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.active {
+  background-color:#4285F4;
+}
+
+/*drop down styling */
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16.5px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 12.5px 15px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar1 a:hover, .dropdown:hover .dropbtn {
+  background-color: #0d47a1;
+}
+
+.dropdown-content {
+  display: none;
+  position:fixed;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 3;
+    
+    overflow-y: visible;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: skyblue !important;
+}
+
+/* search box*/
+#myInput {
+  box-sizing: border-box;
+  
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+a.icon{
+    float:right;
+    display: none;
+}
+
+a.icon1{
+    float:right;
+    display: none;
+}
+
+a.icon2{
+    float:right;
+    display: none;
+}
+
+
+
+.show{
+  display: block;
+}
+
+
+.navbar1 a:hover{
+    background: #0d47a1;
+}
+a.active{
+    
+    background: #0d47a1;
+    color:white!imortant;
+}
+
+.card1 {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+  transition: 0.4s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card1:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+
+
+@media only screen and (max-width: 278px) {
+  
+    div.lg14{
+        display: none;
+}
+    
+}
+
+
+@media only screen and (max-width: 336px) {
+  
+    a.lg12{
+        display: none;
+}
+    
+    a.icon{
+        display: block;
+        float: left;
+    }
+    
+    a.icon1{
+        display: block;
+        float: left;
+    }
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 472px) {
+  
+    a.lg11{
+        display: none;
+}
+    
+    a.icon{
+        display: block;
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 654px) {
+  
+    a.lg9{
+        display: none;
+}
+    
+    a.icon{
+        display: block;
+    }
+    
+}
+
+@media only screen and (max-width: 718px) {
+  
+    a.lg8{
+        display: none;
+}
+}
+
+@media only screen and (max-width: 847px) {
+  
+    a.lg7{
+        display: none;
+}
+}
+
+@media only screen and (max-width: 908px) {
+  
+    a.lg6{
+        display: none;
+}
+}
+
+@media only screen and (max-width: 991px) {
+  
+    a.lg5{
+        display: none;
+}
+}
+
+@media only screen and (max-width: 992px) {
+  
+    a.icon2{
+        display: block;
+}
+    
+    
+}
+
+
+@media only screen and (max-width: 1048px) {
+  
+    a.lg4{
+        display: none;
+}
+    
+}
+
+@media only screen and (max-width: 1122px) {
+  
+    a.lg3{
+        display: none;
+}
+    
+    
+}
+
+@media only screen and (max-width: 1450px) {
+  
+    a.lg2{
+        display: none;
+}
+    
+}
+
+@media only screen and (max-width: 1350px) {
+  
+    a.lg1{
+        display: none;
+}
+    
+    
+}

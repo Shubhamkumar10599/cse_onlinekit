@@ -6,3 +6,8 @@ from django.shortcuts import render
 def index(requests):
     params = {'name': 'harry', 'place': 'mars'}
     return render(requests, 'index.html', params)
+
+
+
+
+print('saurav')

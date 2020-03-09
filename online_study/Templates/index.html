@@ -23,8 +23,11 @@
 
 
 
+
       <!--sidebar and main content link css-->
       <link rel="stylesheet" href="{% static 'css/mainSidebar.css' %}">
+      <link rel="stylesheet" href="{% static 'css/neoMorPhism.css' %}">
+
 
 
 
@@ -95,13 +98,13 @@
 
 
     <a href="#" class="navItem float-right lg9"><i class="fa fa-fw fa-user-o" aria-hidden="true"></i> Profile</a>
-          <a href="#" class="navItem float-right lg9"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
+          <a href="#" class="navItem float-right lg9" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
 
 
 
 
          <a href="#" class ="icon"><i class="fa fa-fw fa-user "></i></a>
-         <a href="#" class ="icon"><i class="fa fa-sign-in"></i></a>
+         <a href="#" class ="icon" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-sign-in"></i></a>
 
 
 </div>
@@ -204,51 +207,12 @@
 
           <section class="mainpart">
 
-              <h2>This is saurav suman111111111</h2>
-              <p>This is team website working on it</p>
-
-              <h2>This is saurav suman</h2>
-              <p>This is team website working on it</p>
-
-              <h2>This is saurav suman</h2>
-              <p>This is team website working on it</p>
-
-              <h2>This is saurav suman</h2>
-              <p>This is team website working on it</p>
-
-              <h2>This is saurav suman</h2>
-              <p>This is team website working on it</p>
-
-              <h2>This is saurav suman</h2>
-              <p>This is team website working on it</p>
-
-              <h2>This is saurav suman</h2>
-              <p>This is team website working on it</p>
-
-              <h2>This is saurav suman</h2>
-              <p>This is team website working on it</p>
-
-              <h2>This is saurav suman</h2>
-              <p>This is team website working on it</p>
-
-              <h2>This is saurav suman</h2>
-              <p>This is team website working on it</p>
-
-              <h2>This is saurav suman</h2>
-              <p>This is team website working on it</p>
-
-              <h2>This is saurav suman</h2>
-              <p>This is team website working on it</p>
-
-              <h2>This is saurav suman</h2>
-              <p>This is team website working on it</p>
-
-
-             <button type="button" class="btn btn-danger">Danger</button>
 
 
 
-              </section>
+
+
+          </section>
 
           </div>
 
@@ -257,6 +221,53 @@
 
       </div>
 
+
+
+
+      <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" style="color:#fff">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+          <div class="form">
+		<h2>LOGIN</h2>
+		<div class="input">
+			<div class="inputbox">
+				<label>Username</label>
+				<input type="text" name="" placeholder="saurav__s7">
+			</div>
+
+    <div class="inputbox">
+    	<label>Password</label>
+    	<input type="password" name="" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;">
+    </div>
+
+    <div class="inputbox">
+      <input type="submit" name="" value="Sign In">
+    </div>
+		</div>
+
+		<p class="forget">Forget Password ? <a href="#">Click Here</a></p>
+	</div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
     <!-- Optional JavaScript -->

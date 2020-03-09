@@ -1,5 +1,4 @@
 .mainpart{
-    
     margin-top: 100px;
     margin-left: 20px;
     padding-left: 250px;
@@ -94,6 +93,7 @@
     display: none !important;
     padding-bottom: 5px !important;
 }
+
 
 @media only screen and (max-width: 992px) {
     .sidenav1{

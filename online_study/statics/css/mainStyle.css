@@ -33,7 +33,7 @@ a.navItem{
 
 .dropdown .dropbtn {
   cursor: pointer;
-  font-size: 16.5px;  
+  font-size: 16.5px;
   border: none;
   outline: none;
   color: white;
@@ -54,7 +54,7 @@ a.navItem{
   min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 3;
-    
+
     overflow-y: visible;
 }
 
@@ -74,7 +74,7 @@ a.navItem{
 /* search box*/
 #myInput {
   box-sizing: border-box;
-  
+
   background-position: 14px 12px;
   background-repeat: no-repeat;
   font-size: 16px;
@@ -111,7 +111,7 @@ a.icon2{
     background: #0d47a1;
 }
 a.active{
-    
+
     background: #0d47a1;
     color:white!imortant;
 }
@@ -129,25 +129,25 @@ a.active{
 
 
 @media only screen and (max-width: 278px) {
-  
+
     div.lg14{
         display: none;
 }
-    
+
 }
 
 
 @media only screen and (max-width: 336px) {
-  
+
     a.lg12{
         display: none;
 }
-    
+
     a.icon{
         display: block;
         float: left;
     }
-    
+
     a.icon1{
         display: block;
         float: left;
@@ -162,11 +162,11 @@ a.active{
 
 
 @media only screen and (max-width: 472px) {
-  
+
     a.lg11{
         display: none;
 }
-    
+
     a.icon{
         display: block;
         float: left;
@@ -174,85 +174,85 @@ a.active{
 }
 
 @media only screen and (max-width: 654px) {
-  
+
     a.lg9{
         display: none;
 }
-    
+
     a.icon{
         display: block;
     }
-    
+
 }
 
 @media only screen and (max-width: 718px) {
-  
+
     a.lg8{
         display: none;
 }
 }
 
 @media only screen and (max-width: 847px) {
-  
+
     a.lg7{
         display: none;
 }
 }
 
 @media only screen and (max-width: 908px) {
-  
+
     a.lg6{
         display: none;
 }
 }
 
 @media only screen and (max-width: 991px) {
-  
+
     a.lg5{
         display: none;
 }
 }
 
 @media only screen and (max-width: 992px) {
-  
+
     a.icon2{
         display: block;
 }
-    
-    
+
+
 }
 
 
 @media only screen and (max-width: 1048px) {
-  
+
     a.lg4{
         display: none;
 }
-    
+
 }
 
 @media only screen and (max-width: 1122px) {
-  
+
     a.lg3{
         display: none;
 }
-    
-    
+
+
 }
 
 @media only screen and (max-width: 1450px) {
-  
+
     a.lg2{
         display: none;
 }
-    
+
 }
 
 @media only screen and (max-width: 1350px) {
-  
+
     a.lg1{
         display: none;
 }
-    
-    
+
+
 }

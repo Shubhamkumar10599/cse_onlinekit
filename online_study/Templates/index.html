@@ -95,13 +95,13 @@
 
 
     <a href="#" class="navItem float-right lg9"><i class="fa fa-fw fa-user-o" aria-hidden="true"></i> Profile</a>
-          <a href="#" class="navItem float-right lg9" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
+          <a href ="loginPage" class="navItem float-right lg9" ><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
 
 
 
 
-         <a href="#" class ="icon"><i class="fa fa-fw fa-user "></i></a>
-         <a href="#" class ="icon" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-sign-in"></i></a>
+         <a href="#" class ="icon"><i class="fa fa-fw fa-user peach-gradient"></i></a>
+         <a action class ="icon"><i class="fa fa-sign-in"></i></a>
 
 
 </div>
@@ -118,16 +118,11 @@
           <div class="">
 
           <div id="sidebarMenu" class="sidenav">
-       <div class="row">
-              <div class="col-md-6">
-                   <a  href="#" style="padding-left: 20px; padding-right: 20px" class="lg12"> ZONEQ</a>
-           </div>
 
-           <div class="col-md-6">
-                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-           </div>
 
-              </div>
+              <div  class="closebtn" onclick="closeNav()"><span class="hover1">&times</span></div>
+
+
 
 
 
@@ -162,24 +157,22 @@
 
           <div class="row">
               <div class="col-sm-6">
-                   <a  href="#" style="padding-left: 20px; padding-right: 20px" class="lg12"> ZONEQ</a>
+
            </div>
 
-           <div class="col-sm-6">
-                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-           </div>
+
 
               </div>
 
           <a href="#" class="active1">C</a>
     <a href="#">Java</a>
-        <hr/>
+
     <a href="#">JavaScript</a>
-        <hr/>
+
       <a href="#">Boostrap</a>
-        <hr/>
+
     <a href="#">Python</a>
-        <hr/>
+
     <a href="#">PHP</a>
       <a href="#">SQL</a>
     <a href="#">Android</a>
@@ -204,50 +197,31 @@
 
           </div>
 
-          <div style="padding-left: 250px padding-top:30px" class="removeSidebar">
+          <div class="removeSidebar">
 
           <section class="mainpart">
 
-              <h2>This is saurav suman111111111</h2>
-              <p>This is team website working on it</p>
-
-              <h2>This is saurav suman</h2>
-              <p>This is team website working on it</p>
-
-              <h2>This is saurav suman</h2>
-              <p>This is team website working on it</p>
-
-              <h2>This is saurav suman</h2>
-              <p>This is team website working on it</p>
-
-              <h2>This is saurav suman</h2>
-              <p>This is team website working on it</p>
-
-              <h2>This is saurav suman</h2>
-              <p>This is team website working on it</p>
-
-              <h2>This is saurav suman</h2>
-              <p>This is team website working on it</p>
-
-              <h2>This is saurav suman</h2>
-              <p>This is team website working on it</p>
-
-              <h2>This is saurav suman</h2>
-              <p>This is team website working on it</p>
-
-              <h2>This is saurav suman</h2>
-              <p>This is team website working on it</p>
-
-              <h2>This is saurav suman</h2>
-              <p>This is team website working on it</p>
-
-              <h2>This is saurav suman</h2>
-              <p>This is team website working on it</p>
-
-              <h2>This is saurav suman</h2>
-              <p>This is team website working on it</p>
-
-
+              <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100 img-fluid" src='{% static "image/widescreen-Image3.jpg" %}' alt="First slide">
+    </div>
+    <div class="carousel-item">
+       <img class="d-block w-100 img-fluid" src='{% static "image/widescreen-Image3.jpg" %}' alt="First slide">
+    </div>
+    <div class="carousel-item">
+       <img class="d-block w-100 img-fluid" src='{% static "image/widescreen-Image3.jpg" %}' alt="First slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 
 
               </section>
@@ -260,49 +234,6 @@
       </div>
 
 
-
-	  <!--modal-->
-
-	  <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true" style="color:#32a3b1">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-
-          <div class="form">
-		<h2>LOGIN</h2>
-		<div class="input">
-			<div class="inputbox">
-				<label>Username</label>
-				<input type="text" name="" placeholder="saurav__s7">
-			</div>
-
-    <div class="inputbox">
-    	<label>Password</label>
-    	<input type="password" name="" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;">
-    </div>
-
-    <div class="inputbox">
-      <input type="submit" name="" value="Sign In">
-    </div>
-		</div>
-
-		<p class="forget">Forget Password ? <a href="#">Click Here</a></p>
-	</div>
-
-      </div>
-      <div class="modal-footer">
-
-      </div>
-    </div>
-  </div>
-</div>
 
 
 

@@ -8,6 +8,12 @@ def index(requests):
     return render(requests, 'index.html', params)
 
 
+def loginPage(requests):
+    return render(requests,'loginPage.html',{})
+
+
+
+
 
 
 print('saurav')

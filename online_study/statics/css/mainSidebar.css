@@ -1,7 +1,7 @@
 .mainpart{
 
-   margin-top: 200px;
-    margin-left: 10px;
+    margin-top: 55px;
+
     padding-left: 250px;
 
 }
@@ -17,7 +17,7 @@
     background-color: #f1f1f1;
     overflow-x: hidden;
     overflow-y: auto;
-    padding-top: 50px; 
+    padding-top: 50px;
     padding-bottom: 100px;
     overflow: auto;
     transition: all 0.5s;
@@ -29,13 +29,13 @@
     color:#000;
     display: block;
     padding: 10px 16px;/* top right bottom left*/
-    
+
 }
 
 
 .sidenav a:hover{
     background-color:skyblue;
-    
+
 }
 .closebtn a:hover{
     color:red !important;
@@ -52,10 +52,10 @@
     background: #f1f1f1 ;
     overflow-x: hidden;
     overflow-y: auto;
-    padding-top: 50px; 
+    padding-top: 50px;
     padding-bottom: 100px;
     overflow: auto;
-    
+
 }
 
 .sidenav1 a{
@@ -64,13 +64,13 @@
     color:#000;
     display: block;
    padding: 10px 16px;/* top right bottom left*/
-    
+
 }
 
 .sidenav1 a:hover{
     background:skyblue;
-    
-    
+
+
 }
 
 .active1{
@@ -95,28 +95,27 @@
     padding-bottom: 5px !important;
 }
 
-
 @media only screen and (max-width: 992px) {
     .sidenav1{
         width: 0px;
-        
+
     }
     .mainpart{
         padding-left: 0px !important;
-        
+
     }
-    
+
     .closebtn{
         display: block !important;
     }
-    
+
 }
 @media only screen and (min-width: 992px) {
     .sidenav{
         width: 0px!important;
-        
+
     }
-    
-    
+
+
 }
 

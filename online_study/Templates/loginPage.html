@@ -28,7 +28,7 @@
 
 <div class="container container-fluid" id="container">
 	<div class="form-container sign-up-container">
-		<form action="#">
+		<form action="#" class="form1">
 			<h1 class="h12" style="font-size: 26px">Create Account</h1>
 			<div class="social-container">
 				<a href="#" class="social"><i class='fab fa-facebook' style='font-size:30px;color:#4285F4;'></i></a>
@@ -41,11 +41,11 @@
 			<input type="text" placeholder="Name" />
 			<input type="email" placeholder="Email" />
 			<input type="password" placeholder="Password" />
-			<button>Sign Up</button>
+			<button class="button1">Sign Up</button>
 		</form>
 	</div>
 	<div class="form-container sign-in-container">
-		<form action="#">
+		<form action="#" class="form1">
 			<h1 class="h11">LOGIN</h1>
 			<div class="social-container">
 				<a href="#" class="social"><i class='fab fa-facebook' style='font-size:30px;color:#4285F4;'></i></a>
@@ -58,7 +58,7 @@
 			<input type="email" placeholder="Email" />
 			<input type="password" placeholder="Password" />
 
-			<button>LOGIN</button>
+			<button class="button1">LOGIN</button>
 			<p class="forget">Forget Password ? <a href="#">Click Here</a></p>
 		</form>
 	</div>
@@ -67,17 +67,69 @@
 			<div class="overlay-panel overlay-left">
 				<h1>Welcome Back!</h1>
 				<p>To keep connected with us please login with your personal info</p>
-				<button class="ghost" id="signIn">Sign In</button>
+				<button class="ghost button1" id="signIn">Sign In</button>
 			</div>
 			<div class="overlay-panel overlay-right">
 				<h1>Hello, Friend!</h1>
 
 				<p>Enter your personal details and start journey with us</p>
-				<button class="ghost" id="signUp">Sign Up</button>
+				<button class="ghost button1" id="signUp1">Sign Up</button>
 			</div>
 		</div>
 	</div>
 </div>
+
+<div class="container2">
+	<div class="button-box">
+		<div id="btn"></div>
+
+		<button type="button"  class="toggle-btn" onclick="login()">SignIn</button>
+		<button type="button" class="toggle-btn" onclick="register()">SignUp</button>
+	</div>
+
+
+       <div class="social-icons">
+       	<h1 class="h11">LOGIN</h1>
+				<a href="#" class="social"><i class='fab fa-facebook' style='font-size:30px;color:#4285F4;'></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g" style='font-size:30px;color:red;'></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in" style='font-size:30px;color:#4285F4;'></i></a>
+
+				<a href="#" class="social"><i class="fab fa-instagram-square " style='font-size:30px;color:#e65100'></i></a>
+			</div>
+
+
+
+			<form id="login" class="input-group">
+
+               <div>
+               	<span>or use your account</span>
+               </div>
+
+			<input type="email" placeholder="Email" class="input-field" style="" />
+			<input type="password" placeholder="Password" class="input-field" />
+
+			<button class="button1 submit-btn">LOGIN</button>
+			<p class="forget">Forget Password ? <a href="#">Click Here</a></p>
+
+			</form>
+
+
+
+          <form id="signup" class="input-group">
+          	<div><span>or use your email for registration</span></div>
+
+			<input type="text" placeholder="Name" />
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Password" />
+			<button class="button1 submit-btn">SignUp</button>
+
+
+			</form>
+
+
+
+</div>
+
 
 
 

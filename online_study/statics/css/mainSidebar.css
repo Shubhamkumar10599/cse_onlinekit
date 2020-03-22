@@ -1,8 +1,8 @@
 .mainpart{
 
-    margin-top: 55px;
+    margin-top: 70px;
 
-    padding-left: 250px;
+    margin-left: 270px;
 
 }
 
@@ -101,7 +101,7 @@
 
     }
     .mainpart{
-        padding-left: 0px !important;
+        margin-left: 0px !important;
 
     }
 

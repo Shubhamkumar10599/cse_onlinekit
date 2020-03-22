@@ -498,3 +498,90 @@ input {
 
 
 }
+
+
+@media only screen and (max-width: 482px) {
+
+
+	.container2{
+
+           width:400px;
+	}
+
+	.input-group{
+	  margin-left:-40px;
+	}
+
+
+
+
+}
+
+
+@media only screen and (max-width: 482px) {
+
+
+	.container2{
+
+           width:320px;
+	}
+
+	.input-group{
+	  margin-left:-75px;
+	}
+}
+
+
+@media only screen and (max-width: 324px) {
+
+
+	.container2{
+
+           width:270px;
+	}
+
+	.input-group{
+	  margin-left:-100px;
+	}
+
+	.input-field{
+	max-width:100%;
+
+	}
+
+
+
+
+}
+
+
+
+
+@media only screen and (max-width: 324px) {
+
+
+	.container2{
+
+           width:230px;
+	}
+
+	.input-group{
+	  margin-left:-100px;
+	}
+
+	.input-field{
+	max-width:100%;
+
+	}
+
+	.social-container a {
+
+
+	font-size:14px;
+	padding:30px
+}
+
+}
+
+
+

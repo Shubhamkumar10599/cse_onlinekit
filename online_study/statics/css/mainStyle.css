@@ -1,9 +1,10 @@
 
 .navbar1 {
   width: 100%;
+  margin:0;
   background-color:#4285F4;
-    position: fixed;
-overflow:auto;
+  position:fixed !important;
+overflow:hidden;
 }
 
 .navbar1 a {

@@ -24,7 +24,7 @@
 
       <!--sidebar and main content link css-->
       <link rel="stylesheet" href="{% static 'css/mainSidebar.css' %}">
-      <link rel="stylesheet" href="{% static 'css/neoMorPhism.css' %}">
+      <link rel="stylesheet" href="{% static 'css/content.css' %}">
 
 
 
@@ -55,7 +55,7 @@
                  <a href="#" class="navItem lg5">Python</a>
                    <a href="#" class="navItem lg7">PHP</a>
                    <a href="#" class="navItem lg3">HTML</a>
-                <a href="{% url 'JavascriptIntro' %}" class="active">JavaScript</a>
+                <a href="{% url 'JavascriptIntro' %}" class="active lg2">JavaScript</a>
                <a href="#" class="navItem lg2">SQL</a>
             <a href="#" class="navItem lg2">JQuery</a>
          <a href="#" class="navItem lg1">Boostrap</a>
@@ -125,8 +125,8 @@
 
 
         <div class="af">Learn Javascript</div>
-    <a href="#" class="active1">JS Introduction</a>
-    <a href="{% url 'JavascriptHome' %}">JS <i class="fa fa-fw fa-home" aria-hidden="true"></i>Home</a>
+    <a href="{% url 'JavascriptIntro' %}" class="active1">JS Introduction</a>
+    <a href="{% url 'JavascriptHome' %}" class="">JS <i class="fa fa-fw fa-home" aria-hidden="true"></i>Home</a>
 
 
 
@@ -144,22 +144,49 @@
 
         <div class="af">Learn Javascript</div>
 
-          <a href="#" class="active1">JS Introduction</a>
-    <a href="{% url 'JavascriptHome' %}">JS <i class="fa fa-fw fa-home" aria-hidden="true"></i>Home</a>
-
+         <a href="{% url 'JavascriptIntro' %}" class="active1">JS Introduction</a>
+    <a href="{% url 'JavascriptHome' %}" class="">JS <i class="fa fa-fw fa-home" aria-hidden="true"></i>Home</a>
 
       </div>
 
 
 
           </div>
+          </div>
 
-          <div class="removeSidebar">
+          <div class="removeSidebar ">
 
           <section class="mainpart" id="language">
 
+              <div class="row">
+
+                  <div class="container col" style="width:;">
+
+                <div class="header-tag">
+                  <h1>Introduction To Javascript</h1>
+
+              </div>
+                <div class="">
+                    <button style='font-size:24px' class="button card3">Previous<i class='fa fa-long-arrow-alt-left'></i></button>
+                </div>
 
 
+               <div class="definition">
+
+                   <p>Javascript is a scripting language .</p>
+
+               </div>
+                  </div>
+
+
+                  <div class="container col" style="margin-left:10px">
+
+
+                     <h1>saurav</h1>
+
+                  </div>
+
+              </div>
 
 
 
@@ -170,7 +197,12 @@
           </div>
 
 
-          </div>
+
+
+
+
+
+
 
       </div>
 

@@ -2,7 +2,7 @@
 
     margin-top: 70px;
 
-    margin-left: 270px;
+    margin-left: 265px;
 
 }
 
@@ -45,7 +45,7 @@ margin-top:-25px;
 
 .sidenav a:hover{
     background-color:skyblue;
-    color:#000;
+    color:#000!important;
 
 }
 .closebtn a:hover{
@@ -80,7 +80,7 @@ margin-top:-25px;
 
 .sidenav1 a:hover{
     background:skyblue;
-    color:#000;
+    color:#000 !important;
 
 
 }

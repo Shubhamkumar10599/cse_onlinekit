@@ -1,0 +1,83 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+.header-tag h1{
+
+color:#606060;
+}
+
+.button {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+
+  margin-top:15px;
+  cursor: pointer;
+}
+
+.card3 {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  transition: 0.4s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card3:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+}
+
+.button:hover{
+background-color:RoyalBlue;
+
+
+}
+
+.definition{
+
+background:#b3ffff;
+margin-top:25px;
+width:1000px;
+padding-top:15px;
+padding-bottom:3px;
+padding-left:10px;
+border-left:6px solid #4285F4;
+}
+
+.definition p{
+
+
+
+ font-size:20px;
+
+}
+
+
+
+
+@media only screen and (max-width: 1282px) {
+
+.definition{
+
+ width:900px;
+}
+
+
+}
+
+
+@media only screen and (max-width: 1182px) {
+
+.definition{
+
+ width:800px;
+}
+
+
+}

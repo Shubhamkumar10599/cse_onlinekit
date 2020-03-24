@@ -23,6 +23,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
     url(r'^loginPage/$', views.loginPage, name='loginPage'),
+    url(r'^JavascriptIntro/$', views.JavascriptIntro, name='JavascriptIntro'),
+    url(r'^JavascriptHome/$', views.JavascriptHome, name='JavascriptHome'),
+    url(r'^Home/$', views.Home, name='Home'),
 
 
 ]

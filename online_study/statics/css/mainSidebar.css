@@ -32,9 +32,20 @@
 
 }
 
+.af{
+font-size:25px;
+color:#000;
+display:block;
+padding-left:16px;
+padding-bottom:10px;
+margin-top:-25px;
+
+}
+
 
 .sidenav a:hover{
     background-color:skyblue;
+    color:#000;
 
 }
 .closebtn a:hover{
@@ -69,6 +80,7 @@
 
 .sidenav1 a:hover{
     background:skyblue;
+    color:#000;
 
 
 }

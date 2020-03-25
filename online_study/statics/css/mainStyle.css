@@ -131,7 +131,7 @@ a.active{
 .card{
 
 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
-  transition: 0.4s;
+ transition: 0.4s;
 margin:10px;
 border:1px solid blue;
 }

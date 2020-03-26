@@ -42,10 +42,15 @@
 
      <div class="navbar1 card1 fixed-top">
 
-         <div onclick="openNav()" class="removeSidebar">
+         <div onclick="openNav()" id="open" class="removeSidebar">
 
          <a  href="#" class="icon2 float-left"><i style="padding-left: 5px; padding-right: 5px;" class="fa fa-reorder" aria-hidden="true"></i></a>
 
+         </div>
+
+         <div onclick="closeNav()" id="close" class="removeSidebar" style="display:none;">
+
+                  <a  href="javascript:void(0)" class="icon2 float-left"><i style="padding-left: 5px; padding-right: 5px;" class="fa fa-times" aria-hidden="true"></i></a>
          </div>
 
 
@@ -191,19 +196,9 @@ console.log(s);</div>
 
 </div>
 
-<script src="/ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+
 <script>
-	//cobalt,xcode,monokai,chrome,dawn,eclipse,gob,textmate,cloud,katzenmilch,kuroir
-    var editor = ace.edit("editor");
-    editor.setTheme("ace/theme/eclipse");
-    editor.session.setMode("ace/mode/javascript");
-    editor.setReadOnly(true);
-    editor.setHighlightActiveLine(false);
-    editor.setShowPrintMargin(false);
-    editor.session.setUseWrapMode(true);
-    editor.renderer.$cursorLayer.element.style.display = "none"
-    editor.renderer.setShowGutter(false);
-    document.getElementById('editor').style.fontSize='17px';
+
 </script>
 
 
@@ -215,7 +210,7 @@ console.log(s);</div>
 
                   <div class="container col">
 
-                      <div class="container3">
+                      <div class="">
                           <h1>saurav</h1>
                       </div>
 
@@ -250,8 +245,10 @@ console.log(s);</div>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
        <script type="text/javascript" src="{% static 'js/mainJavascript.js' %}"></script>
 
+      <script src="/ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+
       <script type="text/javascript" src="{% static 'js/mainsidebar.js' %}"></script>
-      <script type="text/javascript" src="{% static 'js/javascriptEditor.js' %}"></script>
+      <script type="text/javascript" src="{% static 'js/jseditor.js' %}"></script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

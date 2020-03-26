@@ -378,6 +378,48 @@ left:100px;
 
 
 
+.button {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size:20px;
+  margin-top:15px;
+  cursor: pointer;
+}
+
+.button:hover{
+background-color:RoyalBlue;
+color:#fff;
+
+
+}
+
+.home1{
+margin-top:-40px;
+}
+
+.home1 a:hover{
+text-decoration:none;
+
+}
+
+.card3 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+
+}
+
+/* On mouse-over, add a deeper shadow */
+.card3:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+}
+
+
+
+
 @media only screen and (max-width: 800px) {
 
 	.container{
@@ -415,6 +457,10 @@ input {
 
  	display:table-row;
 
+ }
+
+ .home{
+ margin-bottom:-20px;
  }
 
 
@@ -582,6 +628,5 @@ input {
 }
 
 }
-
 
 

@@ -22,15 +22,7 @@ color:#606060;
   cursor: pointer;
 }
 
-.card3 {
-  /* Add shadows to create the "card" effect */
 
-}
-
-/* On mouse-over, add a deeper shadow */
-.card3:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
-}
 
 .button:hover{
 background-color:RoyalBlue;
@@ -61,7 +53,6 @@ border-bottom :50px solid #f1f1f1;
 border-left:20px solid #f1f1f1;
 border-top :50px solid #f1f1f1;
 border-right:20px solid #f1f1f1;
-
 
 
 }

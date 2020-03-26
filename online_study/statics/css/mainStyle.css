@@ -55,8 +55,7 @@ a.navItem{
   min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 3;
-
-    overflow-y: visible;
+  overflow-y: visible;
 }
 
 .dropdown-content a {
@@ -131,7 +130,7 @@ a.active{
 .card{
 
 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
- transition: 0.4s;
+  transition: 0.4s;
 margin:10px;
 border:1px solid blue;
 }

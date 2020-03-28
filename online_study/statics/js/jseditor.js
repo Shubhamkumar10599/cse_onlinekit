@@ -15,7 +15,7 @@
 
     var editor1 = ace.edit("editor1");
     editor1.setTheme("ace/theme/eclipse");
-    editor1.session.setMode("ace/mode/javascript");
+    editor1.session.setMode("ace/mode/html");
     editor1.setReadOnly(true);
     editor1.setHighlightActiveLine(false);
     editor1.setShowPrintMargin(false);
@@ -90,3 +90,8 @@ function alertFunction (){
 	alert('Hi! Buddy this is alert box ');
 }
 
+const changetextt = document.getElementById('script');
+changetextt.innerText='<script></script>';
+
+const changetexttt = document.getElementById('script2');
+changetexttt.innerText='<script></script>';

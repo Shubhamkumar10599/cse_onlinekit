@@ -14,8 +14,8 @@ def loginPage(requests):
 def JavascriptIntro(requests):
     return render(requests,'JavaScriptIntro.html',{})
 
-def JavascriptHome(requests):
-    return render(requests,'JavascriptHome.html',{})
+def javascriptVariables(requests):
+    return render(requests,'jsVariables.html',{})
 
 def Home(requests):
     return render(requests,'index.html',{})

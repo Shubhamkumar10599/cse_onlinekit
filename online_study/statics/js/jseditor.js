@@ -90,8 +90,6 @@ function alertFunction (){
 	alert('Hi! Buddy this is alert box ');
 }
 
-const changetextt = document.getElementById('script');
-changetextt.innerText='<script></script>';
 
 const changetexttt = document.getElementById('script2');
 changetexttt.innerText='<script></script>';

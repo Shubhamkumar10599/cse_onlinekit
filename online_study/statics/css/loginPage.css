@@ -103,6 +103,7 @@ input {
 }
 
 .container {
+display:none;
 	background-color: #fff;
 	border-radius: 10px;
   	box-shadow: 0 14px 28px rgba(0,0,0,0.25),
@@ -250,7 +251,7 @@ input {
 
 .container2{
 
-	display: none;
+	display: block;
 
     background-color: #fff;
 	border-radius: 10px;
@@ -260,8 +261,8 @@ input {
 
 	width: 480px;
 	max-width: 100%;
-	min-height: 480px;
-	margin: 6% auto;
+	min-height: 540px;
+	margin:  auto;
     padding: 5px;
     overflow: hidden;
     justify-content: center;
@@ -303,6 +304,7 @@ color:#fff;
 .social-icons{
 margin: -20px auto;
 text-align: center;
+margin-top:10px;
 
 
 }
@@ -316,6 +318,7 @@ text-align: center;
 	margin: 0 7px;
 	height: 40px;
 	width: 40px;
+	font-size:30px;
 }
 
 
@@ -346,7 +349,7 @@ text-align: center;
 	text-align: center;
 	justify-content: center;
 	align-items: center;
-
+	margin-top:60px;
 }
 
 .input-field{
@@ -358,6 +361,9 @@ text-align: center;
 	border-top: 0;
 	border-right:0;
 	outline:none;
+
+
+
 }
 
 .submit-btn{
@@ -399,7 +405,7 @@ color:#fff;
 }
 
 .home1{
-margin-top:-40px;
+margin-top:;
 }
 
 .home1 a:hover{
@@ -417,6 +423,13 @@ text-decoration:none;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
 }
 
+
+
+.logo{
+margin-top:-20px;
+margin-left:180px;
+
+}
 
 
 
@@ -459,9 +472,6 @@ input {
 
  }
 
- .home{
- margin-bottom:-20px;
- }
 
 
 
@@ -483,7 +493,7 @@ input {
 .social-container a {
 
 
-	font-size:20px;
+	font-size:30px;
 	padding:20px
 }
 
@@ -546,39 +556,163 @@ input {
 }
 
 
-@media only screen and (max-width: 482px) {
+
+
+
+@media only screen and (max-width: 500px) {
+
+
+	.container2{
+
+           width:450px;
+	}
+.input-group{
+	  margin-left:-20px;
+	}
+
+
+	.logo{
+
+		margin-left:165px;
+
+	}
+}
+
+
+
+@media only screen and (max-width: 472px) {
 
 
 	.container2{
 
            width:400px;
 	}
-
-	.input-group{
+.input-group{
 	  margin-left:-40px;
 	}
 
 
+	.logo{
 
+		margin-left:140px;
 
+	}
 }
 
 
-@media only screen and (max-width: 482px) {
+
+
+@media only screen and (max-width: 422px) {
+
+.container2{
+
+           width:370px;
+	}
+.input-group{
+	  margin-left:-55px;
+	}
+
+
+	.logo{
+
+		margin-left:125px;
+
+	}
+}
+
+
+
+@media only screen and (max-width: 389px) {
+
+.container2{
+
+           width:340px;
+	}
+.input-group{
+	  margin-left:-70px;
+	}
+
+
+	.logo{
+
+		margin-left:108px;
+
+	}
+}
+
+
+
+@media only screen and (max-width: 361px) {
+
+.container2{
+
+           width:300px;
+	}
+.input-group{
+	  margin-left:-90px;
+	}
+
+
+	.logo{
+
+		margin-left:80px;
+
+	}
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 324px) {
 
 
 	.container2{
 
-           width:320px;
+           width:290px;
 	}
 
 	.input-group{
-	  margin-left:-75px;
+	  margin-left:-95px;
 	}
+
+	.input-field{
+	max-width:100%;
+
+	}
+
+
+
+
 }
 
 
-@media only screen and (max-width: 324px) {
+@media only screen and (max-width: 321px) {
+
+
+	.container2{
+
+           width:290px;
+	}
+
+
+
+	.input-field{
+	max-width:100%;
+
+	}
+
+	.home1{
+		margin-top:100px;
+	}
+
+}
+
+
+
+@media only screen and (max-width: 292px) {
 
 
 	.container2{
@@ -586,47 +720,121 @@ input {
            width:270px;
 	}
 
-	.input-group{
+.input-group{
 	  margin-left:-100px;
+
 	}
 
 	.input-field{
-	max-width:100%;
+	width:100%;
 
 	}
 
+	.social-icons a{
+		font-size:25px;
+		margin:2px;
 
+	}
 
 
 }
 
 
 
-
-@media only screen and (max-width: 324px) {
+@media only screen and (max-width: 272px) {
 
 
 	.container2{
 
-           width:230px;
+           width:240px;
 	}
 
-	.input-group{
+.input-group{
 	  margin-left:-100px;
+
 	}
 
 	.input-field{
-	max-width:100%;
+	width:100%;
 
 	}
 
-	.social-container a {
+	.social-icons a{
+		font-size:25px;
+		margin:2px;
+
+	}
+
+	.logo{
+
+		margin-left:60px;
+
+	}
+
+	.button1{
+		margin-right:40px
+	}
 
 
-	font-size:14px;
-	padding:30px
 }
 
+
+
+@media only screen and (max-width: 240px) {
+
+
+
+	.container2{
+
+           min-height:400px;
+	}
+
+.input-group{
+	  margin-left:-120px;
+	  margin-top:20px;
+
+	}
+
+	.input-field{
+	width:70%;
+
+	}
+
+	.social-icons{
+		margin-top:-5px
+	}
+
+	.social-icons a{
+		font-size:20px;
+		margin:0px;
+
+	}
+
+	.logo{
+
+
+
+	}
+
+	.button1{
+		margin-right:10px
+
+	}
+
+
+
+.forget{
+		margin-top:-1px;
+
+	}
+
+
+
+
+
 }
+
+
+
 
 

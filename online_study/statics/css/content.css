@@ -42,6 +42,8 @@ font-family: 'Poppins', sans-serif;
 width:950px;
 margin-bottom:20px!important;
 
+overflow-x:hidden;
+
 }
 
 .intro{
@@ -942,6 +944,10 @@ margin-left:10px;
 }
 
 @media only screen and (max-width: 488px) {
+
+h1{
+font-size:20px;
+}
 
 .definition{
 

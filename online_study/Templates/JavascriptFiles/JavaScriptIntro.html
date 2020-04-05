@@ -107,8 +107,7 @@
 
 
 
-         <a href="#" class ="icon"><i class="fa fa-fw fa-user peach-gradient"></i></a>
-         <a  class ="icon" href ="{% url 'loginPage' %}"><i class="fa fa-sign-in"></i></a>
+
 
 
 </div>
@@ -146,6 +145,9 @@
 
     <a href="{% url 'JavascriptIntro' %}" class="active1">JS Introduction</a>
     <a href="{% url 'javascriptVariables' %}" class="">JS Variables</a>
+              <a href="{% url 'jsDatatypes' %}" class="">JS DataTypes</a>
+                      <a href="{% url 'jsTypeConversion' %}" class="">JS TypeConversion</a>
+
 
 
 
@@ -177,6 +179,9 @@
 
          <a href="{% url 'JavascriptIntro' %}" class="active1">JS Introduction</a>
     <a href="{% url 'javascriptVariables' %}" class="">JS Variables</a>
+        <a href="{% url 'jsDatatypes' %}" class="">JS DataTypes</a>
+                <a href="{% url 'jsTypeConversion' %}" class="">JS TypeConversion</a>
+
 
       </div>
 
@@ -197,8 +202,9 @@
                   <h1>Introduction To Javascript</h1>
 
               </div>
-                <div class="">
-                    <button style='font-size:24px' class="button card3">Previous<i class='fa fa-long-arrow-alt-left'></i></button>
+                <div class="" style="display:flex">
+                    <button  class="button card3"><i class='fa fa-angle-double-left'></i> Prev</button>
+                   <a href="{% url 'javascriptVariables' %}" ><button  class="button card3 lef">Next <i class='fa fa-angle-double-right'></i></button></a>
                 </div>
 
 
@@ -208,15 +214,15 @@
                       <p>Javascript is a scripting language .</p>
                    </div>
 <div class="codeTag">
-    <p>Javascript is a language which process the HTML element to make page more attractive and powerful.</p>
-    <p>It's enhanced the understandability of a page and makes dynamic.</p>
+    <p><i class='fa fa-angle-double-right'></i> Javascript is a language which process the HTML element to make page more attractive and powerful.</p>
+    <p><i class='fa fa-angle-double-right'></i> It's enhanced the understandability of a page and makes dynamic.</p>
 </div>
 
 
 
 <div class="content">
-    <p>There different ways to write javascript code but we are in very basic stage so, let's start with basic.</p>
-    <p> We can write javascript code within the HTML code by using <span id="script2"></span> tag example is given below.</p>
+    <p><i class='fa fa-angle-double-right'></i> There different ways to write javascript code but we are in very basic stage so, let's start with basic.</p>
+    <p><i class='fa fa-angle-double-right'></i> We can write javascript code within the HTML code by using <span style="color: green;" id="script2"></span> tag example is given below.</p>
 </div>
 
 
@@ -265,7 +271,9 @@ console.log('Hello World');
 
 
 <div class="editor1">
-<div  id="editor2">console.warn('This is warning');</div>
+<div  id="editor2">
+console.warn('This is warning');
+</div>
 
 
 </div>
@@ -290,7 +298,9 @@ console.log('Hello World');
 
 
 <div class="editor1">
-<div  id="editor3">console.log(34 + 4);</div>
+<div  id="editor3">
+console.log(34 + 4);
+</div>
 
 
 </div>
@@ -317,7 +327,9 @@ console.log('Hello World');
 
 
 <div class="editor1">
-<div  id="editor4">console.error('This is an error');</div>
+<div  id="editor4">
+console.error('This is an error');
+</div>
 
 
 </div>
@@ -342,7 +354,9 @@ console.log('Hello World');
 
 
 <div class="editor1">
-<div  id="editor5">console.log([34,3,2,1,])</div>
+<div  id="editor5">
+console.log([34,3,2,1,]);
+</div>
 
 
 </div>
@@ -374,9 +388,11 @@ console.log('Hello World');
 
 
 <div class="editor1">
-<div  id="editor6" style="height:80px;">console.log({harry:'this',marks:34});
+<div  id="editor6" style="height:100px;">
+console.log({harry:'this',marks:34});
 
-console.table({harry:'this',marks:34});</div>
+console.table({harry:'this',marks:34});
+</div>
 
 
 </div>
@@ -423,8 +439,11 @@ alertFunction();</div>
 </div>
 
 
-                    <div class="" style="margin-bottom:40px;">
-                    <button style='font-size:24px ' class="button card3 float-right">Previous<i class='fa fa-long-arrow-alt-left'></i></button>
+                    <div class="" style="margin-bottom:40px; margin-top:10px;">
+                     <div class="" style="display:flex">
+                    <button  class="button card3"><i class='fa fa-angle-double-left'></i> Prev</button>
+                   <a href="{% url 'javascriptVariables' %}" ><button  class="button card3 lef">Next <i class='fa fa-angle-double-right'></i></button></a>
+                </div>
                 </div>
 
 
@@ -440,14 +459,14 @@ alertFunction();</div>
 
                       <div>
 
-                         <div class="card widt" style="border:2px solid red">
+                         <div class="card widt" style="border:4px solid  #13D757">
 
                             <svg viewBox="0 0 128 128">
 <path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185h-125.184z"></path><path fill="#323330" d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235-5.926 6.724-4.236 18.492 2.975 23.335 7.104 5.332 17.54 6.545 18.873 11.531 1.297 6.104-4.486 8.08-10.234 7.378-4.236-.881-6.592-3.034-9.139-6.949-4.688 2.713-4.688 2.713-9.508 5.485 1.143 2.499 2.344 3.63 4.26 5.795 9.068 9.198 31.76 8.746 35.83-5.176.165-.478 1.261-3.666.38-8.581zm-46.885-37.793h-11.709l-.048 30.272c0 6.438.333 12.34-.714 14.149-1.713 3.558-6.152 3.117-8.175 2.427-2.059-1.012-3.106-2.451-4.319-4.485-.333-.584-.583-1.036-.667-1.071l-9.52 5.83c1.583 3.249 3.915 6.069 6.902 7.901 4.462 2.678 10.459 3.499 16.731 2.059 4.082-1.189 7.604-3.652 9.448-7.401 2.666-4.915 2.094-10.864 2.07-17.444.06-10.735.001-21.468.001-32.237z"></path>
 </svg>
   <div class="card-body" style="">
 
-      <a href="{% url 'JavascriptIntro' %}"><button type="button" class="btn btn-primary card-text" style="margin-left:4px; border:2px solid red;">JAVASCRIPT </button></a>
+      <a href="{% url 'JavascriptIntro' %}"><button type="button" class="btn btn-primary card-text" style="margin-left:4px; border:4px solid  #13D757;">JAVASCRIPT </button></a>
   </div>
 </div>
 

@@ -85,8 +85,41 @@
     document.getElementById('editor6').style.fontSize='17px'
 
 
+    var editor11 = ace.edit("editor11");
+    editor11.setTheme("ace/theme/eclipse");
+    editor11.session.setMode("ace/mode/javascript");
+    editor11.setReadOnly(true);
+    editor11.setHighlightActiveLine(false);
+    editor11.setShowPrintMargin(false);
+    editor11.session.setUseWrapMode(true);
+    editor11.renderer.$cursorLayer.element.style.display = "none"
+    editor11.renderer.setShowGutter(false);
+    document.getElementById('editor11').style.fontSize='17px'
 
 
+    var editor10 = ace.edit("editor10");
+    editor10.setTheme("ace/theme/eclipse");
+    editor10.session.setMode("ace/mode/javascript");
+    editor10.setReadOnly(true);
+    editor10.setHighlightActiveLine(false);
+    editor10.setShowPrintMargin(false);
+    editor10.session.setUseWrapMode(true);
+    editor10.renderer.$cursorLayer.element.style.display = "none"
+    editor10.renderer.setShowGutter(false);
+    document.getElementById('editor10').style.fontSize='17px'
+
+/*
+     var editor12 = ace.edit("editor12");
+    editor12.setTheme("ace/theme/eclipse");
+    editor12.session.setMode("ace/mode/javascript");
+    editor12.setReadOnly(true);
+    editor12.setHighlightActiveLine(false);
+    editor12.setShowPrintMargin(false);
+    editor12.session.setUseWrapMode(true);
+    editor12.renderer.$cursorLayer.element.style.display = "none"
+    editor12.renderer.setShowGutter(false);
+    document.getElementById('editor12').style.fontSize='17px'
+*/
 
 
 
@@ -95,7 +128,9 @@ function alertFunction (){
 }
 
 
-const changetexttt = document.getElementById('script2');
+var changetexttt = document.getElementById('script2');
+changetexttt='null';
+
 changetexttt.innerText="<script></script>";
 
 
@@ -109,4 +144,13 @@ var demo4 = document.getElementById('demo4');
 demo4.innerText='This is paragraph';
 
 }
+
+function todayDate () {
+   let date = new Date();
+   document.getElementById('date1').innerHTML=date;
+      document.getElementById('date12').innerHTML=date;
+
+
+}
+
 

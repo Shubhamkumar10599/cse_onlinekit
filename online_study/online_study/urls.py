@@ -26,6 +26,8 @@ urlpatterns = [
     url(r'^JavascriptIntro/$', views.JavascriptIntro, name='JavascriptIntro'),
     url(r'^javascriptVariables/$', views.javascriptVariables, name='javascriptVariables'),
     url(r'^Home/$', views.Home, name='Home'),
+    url(r'^jsDatatypes/$', views.jsDatatypes, name='jsDatatypes'),
+    url(r'^jsTypeConversion/$', views.jsTypeConversion, name='jsTypeConversion'),
 
 
 ]

@@ -32,7 +32,7 @@
 
 
 
-    <title>Javascript Variables</title>
+    <title>Javascript String</title>
   </head>
   <body>
 
@@ -52,6 +52,7 @@
 
                   <a  href="javascript:void(0)" class="icon2 float-left"><i style="padding-left: 5px; padding-right: 5px;" class="fa fa-times" aria-hidden="true"></i></a>
          </div>
+
 
 
      <a class="lg11" href="{% url 'Home' %}"><i class="fa fa-fw fa-home" aria-hidden="true"></i> Home</a>
@@ -125,7 +126,8 @@
           <div class="">
 
           <div id="sidebarMenu" class="sidenav">
-<div class="row">
+
+             <div class="row">
 
     <div style="margin-top:-30px;margin-left:29px; color: #32a3b1;" class="lgo" onclick="location='{% url 'Home' %}'" title="HEY! jango">
         <h1>jango<span>CS</span></h1>
@@ -134,19 +136,26 @@
 </div>
 
 
-  <a href="{% url 'JavascriptIntro' %}" class="">JS Introduction</a>
-    <a href="{% url 'javascriptVariables' %}" class="active1">JS Variables</a>
-         <a href="{% url 'jsDatatypes' %}" class="">JS DataTypes</a>
-                      <a href="{% url 'jsTypeConversion' %}" class="">JS TypeConversion</a>
 
-              <a href="{% url 'jsString' %}" class="">JS String</a>
+
+
+
+
+
+    <a href="{% url 'JavascriptIntro' %}" class="">JS Introduction</a>
+    <a href="{% url 'javascriptVariables' %}" class="">JS Variables</a>
+     <a href="{% url 'jsDatatypes' %}" class="">JS DataTypes</a>
+              <a href="{% url 'jsTypeConversion' %}" class="">JS TypeConversion</a>
+         <a href="{% url 'jsString' %}" class="active1">JS String</a>
+
+
 
 
 
 
     <div id="" class="sidenav1">
 
-       <div class="row">
+        <div class="row">
 
     <div style="margin-top:-30px;margin-left:29px; color: #32a3b1;" class="lgo" onclick="location='{% url 'Home' %}'" title="HEY! jango">
         <h1>jango<span>CS</span></h1>
@@ -166,11 +175,10 @@
 
 
          <a href="{% url 'JavascriptIntro' %}" class="">JS Introduction</a>
-    <a href="{% url 'javascriptVariables' %}" class="active1">JS Variables</a>
-        <a href="{% url 'jsDatatypes' %}" class="">JS DataTypes</a>
-                <a href="{% url 'jsTypeConversion' %}" class="">JS TypeConversion</a>
-
-                      <a href="{% url 'jsString' %}" class="">JS String</a>
+    <a href="{% url 'javascriptVariables' %}" class="">JS Variables</a>
+         <a href="{% url 'jsDatatypes' %}" class="">JS DataTypes</a>
+        <a href="{% url 'jsTypeConversion' %}" class="">JS TypeConversion</a>
+                <a href="{% url 'jsString' %}" class="active1">JS String</a>
 
 
       </div>
@@ -189,40 +197,53 @@
                   <div class="container col res" style="width:;">
 
                 <div class="header-tag">
-                  <h1>Javascript Variables</h1>
+                  <h1>Javascript String</h1>
 
               </div>
                 <div class="" style="display:flex">
-                    <a href="{% url 'JavascriptIntro' %}" ><button  class="button card3"><i class='fa fa-angle-double-left'></i> Prev</button></a>
-                    <a href="{% url 'jsDatatypes' %}"><button  class="button card3 lef">Next <i class='fa fa-angle-double-right'></i></button></a>
+                    <a href="{% url 'jsTypeConversion' %}" ><button  class="button card3"><i class='fa fa-angle-double-left'></i> Prev</button></a>
+                    <a href="#"><button  class="button card3 lef">Next <i class='fa fa-angle-double-right'></i></button></a>
                 </div>
 
 
                <div class="definition">
 
                    <div class="intro">
-                      <p>Variables in Javascript. Let,Const,Var</p>
+                      <p>String in Javascript.</p>
                    </div>
 
 <div class="codeTag">
-    <h3 style="font-family: 'Cairo', sans-serif;">Rules for Javascript Variables:</h3>
-    <p></p>
-    <p><i class='fa fa-angle-double-right'></i> Javascript Variables cannot start with number.</p>
-    <p><i class='fa fa-angle-double-right'></i> Javascript Variables can start with underscore(_),dollar($) and Letter.</p>
-    <p><i class='fa fa-angle-double-right'></i> Javascript Variables are cases sensitive.</p>
-    <p><i class='fa fa-angle-double-right'></i> Javascript Variables cannot contain spaces between them like (vari ables) wrong here.</p>
-    <p>Example like if,else,for,while,do etc are certain inbuilt keywords which are not used as variables.</p>
+    <h3 style="font-family: 'Cairo', sans-serif;">String</h3>
+    <p><i class='fa fa-angle-double-right'></i>There are various operation which is perform on String. </p>
 </div>
 
 
 
-<div class="content">
-    <p>WE Highly Recommended to not use Dollar($) and Underscore(_) as starting character of Variables because it is mainly used as keywords in advanced javascript framework like JQUERY.</p>
-    <p>Here we use External file of javascript.</p>
-    <p>File.js You can give any name to your javascript file but it is meaningful and related your project and your learning purpose.</p>
-    <div class="note">
-       <p><span style="font-weight:bold;letter-spacing:2px;font-size:22px;">Note</span><i class="fa fa-fw fa-pencil" style="font-size:22px;padding-right:10px;" aria-hidden="true">:</i> It is Good practice to write code of including Javascript file into HTML file is just before ending of body tag.</p>
-    </div>
+<div class="content" style="font-family: 'Source Code Pro', monospace;list-style-type:none;">
+
+    <h4>Various Operations on String are:</h4>
+
+     <p><i class='fa fa-angle-double-right'></i>String<span style="font-weight:bold"> Concatenation</span></p>
+     <p><i class='fa fa-angle-double-right'></i>String<span style="font-weight:bold"> Length</span></p>
+     <p><i class='fa fa-angle-double-right'></i>String<span style="font-weight:bold"> LowerCase</span></p>
+     <p><i class='fa fa-angle-double-right'></i>String<span style="font-weight:bold"> UpperCase</span></p>
+     <p><i class='fa fa-angle-double-right'></i>String<span style="font-weight:bold">  Index</span></p>
+     <p><i class='fa fa-angle-double-right'></i>String<span style="font-weight:bold"> LastIndex</span></p>
+     <p><i class='fa fa-angle-double-right'></i>String<span style="font-weight:bold"> CharAt</span></p>
+         <p><i class='fa fa-angle-double-right'></i>String<span style="font-weight:bold"> endsWith</span></p>
+         <p><i class='fa fa-angle-double-right'></i>String<span style="font-weight:bold"> subString</span></p>
+         <p><i class='fa fa-angle-double-right'></i>String<span style="font-weight:bold"> includes</span></p>
+         <p><i class='fa fa-angle-double-right'></i>String<span style="font-weight:bold"> Slice</span></p>
+         <p><i class='fa fa-angle-double-right'></i>String<span style="font-weight:bold"> Split</span></p>
+         <p><i class='fa fa-angle-double-right'></i>String<span style="font-weight:bold"> Replace</span></p>
+         <p><i class='fa fa-angle-double-right'></i>String<span style="font-weight:bold"> BackTicks</span></p>
+
+
+
+
+
+
+
 
 
 
@@ -231,34 +252,40 @@
 
 
 
-<h3 style="margin-bottom:-20px;">Example <span style="color: #13D757"> index.html</span></h3>
+
+
+<h3 style="margin-bottom:-20px;margin-top:22px;font-family: 'Source Code Pro', monospace;">String <span>Concatenation</span>:</h3>
 <div class="editor1">
-<div  id="editor1" style="height:330px;"><textarea><!DOCTYPE html>
-<html>
-<body>
+<div  id="editor11" style="height:400px;">let str1 = 'Harry';
+let str2 = ' ';
+let str3 = 'Potter'
+let str = str1 + str2 + str3;
+//Here concatenate all three different String in single variable.
+console.log(str);
 
-<h1 id="demo1"></h1>
-<p id="demo2"></p>
+console.log('Lord' , 'Shiva');
+//Concatenation of two string.
 
-<button style="" onclick="MyFunction()">CLICK ME to KNOW THE POWER OF ID</button>
-
-<script type="text/javascript" src="Main.js"></script>
-</body>
-</html></textarea>
+let string = 'Reading ' + 'Books ';
+string = string.concat('are ' , 'Good ' , 'Practice.');
+console.log(string);
+//Here we use Concat function for concatenation of string.
+//By this Method You can concat any numbder of string.
 </div>
-
-
 </div>
-
 <div class="output-button">
-
+    <div class="">
+	<button class="button3" data-toggle="collapse" data-target="#console.log"><i class="fa fa-angle-double-down" aria-hidden="true"></i> Get output</button>
+</div>
 </div>
 
 <div class="collapse" id="console.log">
   <div class="output-showing">
     <h5>OUTPUT</h5>
 
-      <h6>Hello World</h6>
+      <h6>Harry Potter</h6>
+      <h6>Lord Shiva</h6>
+      <h6>Reading Books are Good practice.</h6>
       <p>This output will only showing the only string which is present in <span>"console.log('Hello World');".</span>
         When you try it yourself then goto your HTML page click right button on mouse and goto inspect
         and then goto console after that you able to see output of javascript console.
@@ -268,66 +295,46 @@
 
 
 
-<h3 style="margin-bottom:-20px;margin-top:22px;">Javascript <span style="font-weight:bold;padding-left:10px;"> Main.js</span></h3>
+
+
+
+<h3 style="margin-bottom:-20px;margin-top:22px;font-family: 'Source Code Pro', monospace;">String <span>Length</span>:</h3>
 <div class="editor1" style="">
-<div  id="editor2" style="padding-top:-20px;height:230px;">function MyFunction() {
+<div  id="editor2" style="padding-top:-20px;height:150px;">let string = 'Saurav ';
+len = string.length;
+//Here we use length key to find string length.
 
-var demo1 = document.getElementById('demo1');
-demo1.innerText='This is big header.';
-
-var demo2 = document.getElementById('demo2');
-demo2.innerText='This is paragraph.';
-
-}
+console.log('Length:',len);
 </div>
-
-
 </div>
 
 <div class="output-button">
     <div class="">
 	<button class="button3" data-toggle="collapse" data-target="#console.warn" ><i class="fa fa-angle-double-down" aria-hidden="true"></i> Get output</button>
-         <span style="padding-left:10px;"><a href="#" style="color:red"> Learn JS Function</a></span>
+         <span style="padding-left:10px;"><a href="#" style="color:red"></a></span>
 </div>
 </div>
 
 <div class="collapse" id="console.warn">
   <div class="output-showing">
     <h5>OUTPUT</h5>
+      <h6>Length: <span style="color:blue;">7</span></h6>
 
-
-
-<button style="" onclick="MyFunction1()">CLICK ME to KNOW THE POWER OF ID</button>
-
-       <h1 id="demo3"></h1>
-      <p id="demo4"></p>
-
-
+      <p>This output will only showing the only string which is present in <span>"console.warn('This is warning');".</span>
+        When you try it yourself then goto your HTML page click right button on mouse and goto inspect
+        and then goto console after that you able to see output of javascript console.
+    </p>
   </div>
 </div>
 
-<h3 style="margin-bottom:-20px;margin-top:22px;">Javascript <span style="font-weight:bold;padding-left:10px;"> Var</span></h3>
+<h3 style="margin-bottom:-20px;margin-top:22px;font-family: 'Source Code Pro', monospace;">String <span>LowerCase</span>:</h3>
 <div class="editor1">
-<div  id="editor3" style="height:420px;">var Name = 'Saurav';
-var Marks = 100;
-var Channel;
-//Here Variable Channel is not Defined.
+<div  id="editor3" style="height:150px;">let string = 'A B C D E F G';
+string = string.toLowerCase();
+//it is the LowerCase Method which change the string LowerCase.
 
-console.log(Name , Marks , Channel);
-
-var City = 'Motihari';
-console.log(City);
-
-City='Delhi';
-//Here we can change the value of City var.
-
-Channel='YouTube';
-//Here Channel is defined.
-
-console.log(Channel , City);
+console.log(string);
 </div>
-
-
 </div>
 
 <div class="output-button">
@@ -339,12 +346,12 @@ console.log(Channel , City);
 
 
 
+
+
 <div class="collapse" id="console.log1">
   <div class="output-showing">
     <h5>OUTPUT</h5>
-      <h6>Saurav <span style="color:blue"> 100</span> <span style="color:grey;"> undefined</span></h6>
-      <h6>Motihari</h6>
-      <h6>YouTube Delhi</h6>
+     <h6>a b c d e f g</h6>
 
       <p>This output will only showing the only string which is present in <span>"console.log(34 + 4);".</span>
         When you try it yourself then goto your HTML page click right button on mouse and goto inspect
@@ -353,32 +360,18 @@ console.log(Channel , City);
   </div>
 </div>
 
-<div class="content" style="font-family: 'Source Code Pro', monospace;">
-               <p>The Variable of type Var is can change easily anywhere of javascript code.</p>
-               <h4>There are two types of comments:</h4>
-                <p>1. SingleLine Comment</p>
-                <p>2. MultiLine Comment</p>
-            </div>
 
 
 
-<h3 style="margin-bottom:-20px;margin-top:22px;">Javascript <span style="font-weight:bold;padding-left:10px;"> Comment</span></h3>
+
+<h3 style="margin-bottom:-20px;margin-top:22px;font-family: 'Source Code Pro', monospace;">String <span>UpperCase</span>:</h3>
 <div class="editor1">
-<div  id="editor4" style="height:360px;">
-/*
-    This is MultiLine comments.
+<div  id="editor4" style="height:150px;">let string = 'a b c d e f g';
+string = string.toUpperCase();
+//it is the UpperCase Method which change the string UpperCase.
 
-    You can Write Anything important which is related to your code.
+console.log(string);
 
-    It is used to optimized the code.
-
-    Comment is also essential for understandability of code.
-
-    for other Developers.
-
-*/
-
-// This is Single line Comment.
 </div>
 
 
@@ -386,13 +379,15 @@ console.log(Channel , City);
 
 <div class="output-button">
     <div class="">
+        	<button class="button3" data-toggle="collapse" data-target="#console.log2" ><i class="fa fa-angle-double-down" aria-hidden="true"></i> Get output</button>
+
     </div>
 </div>
 
 <div class="collapse" id="console.log2">
   <div class="output-showing">
     <h5>OUTPUT</h5>
-      <h6 style="color:red;"><i class="fa fa-times-circle" style="color:red;"></i> This is an error</h6>
+      <h6>A B C D E F G</h6>
       <p>This output will only showing the only string which is present in <span>"console.error('This is an error');".</span>
         When you try it yourself then goto your HTML page click right button on mouse and goto inspect
         and then goto console after that you able to see output of javascript console.
@@ -400,17 +395,26 @@ console.log(Channel , City);
   </div>
 </div>
 
+              <div class="content">
+                  <div class="note">
+       <p><span style="font-weight:bold;letter-spacing:2px;font-size:22px;">Note</span><i class="fa fa-fw fa-pencil" style="font-size:22px padding-right:10px;" aria-hidden="true">:</i>
+           variable.<span style="font-weight:bold;">toFixed</span>( <span style="font-weight:bold;">value</span> ), Here variable is any floating variable , <span style="font-weight:bold;">toFixed()</span>
+            is a method which set the decimal point as user wants and <span style="font-weight:bold;">value</span> specify the decimal points.</p>
+    </div>
+              </div>
 
-<h3 style="margin-bottom:-20px;margin-top:22px;">Javascript <span style="font-weight:bold;padding-left:10px;"> Const</span></h3>
+<h3 style="margin-bottom:-20px;margin-top:22px;font-family: 'Source Code Pro', monospace;">Change to Boolean():</h3>
 <div class="editor1">
-<div  id="editor5" style="height:200px;">const Marks = 88;
-console.log(Marks);
+<div  id="editor5" style="height:280px;">let number0 = 0;
+number0 = Boolean(number0);
+//Here we change number 0 to boolean.
+console.log(number0 , (typeof number0));
 
-Marks = 90;
-/*
-    Here We cannot chane the value of const.
-    Because Const means Constant and const Never be Changed.
-*/
+
+let number1 = 1;
+number1 = Boolean(number1);
+//Here we change number 1 to boolean.
+console.log(number1, (typeof number1));
 </div>
 
 
@@ -425,9 +429,8 @@ Marks = 90;
 <div class="collapse" id="console.log3">
   <div class="output-showing">
     <h5>OUTPUT</h5>
-     <h6 style="color:blue;">88</h6>
-     <h6 style="">Marks = <span style="color:blue">90</span>; not change  <i class="fa fa-times-circle" style="color:red;"></i></h6>
-      <h6 style="color:red;">Assignment to Constant Variables is not allow</h6>
+      <h6><span style="color:blue">false</span> " <span style="color:Tomato">boolean</span> "</h6>
+      <h6><span style="color:blue">true</span> " <span style="color:Tomato">boolean</span> "</h6>
 
       <p>This output will only showing the only string which is present in <span>"console.log([34,3,2,1,])".</span>
         When you try it yourself then goto your HTML page click right button on mouse and goto inspect
@@ -437,50 +440,42 @@ Marks = 90;
 </div>
 
 
-<div class="content">
-
-    <div class="note">
-       <p><span style="font-weight:bold;letter-spacing:2px;font-size:22px;">Note</span><i class="fa fa-fw fa-pencil" style="font-size:22px;padding-right:10px;" aria-hidden="true">:</i>
-           In Advanced Javascript we mostly used Const and Let instead of Var.</p>
-    </div>
-
+<div class="content" style="margin-top:30px;margin-bottom:10px;font-family: 'Cairo', sans-serif;border-left:7px solid orange;">
+    <h2>Reference DataTypes <i class='fa fa-angle-double-right'></i></h2>
 </div>
 
-<h3 style="margin-bottom:-20px;margin-top:22px;">Javascript <span style="font-weight:bold;padding-left:10px;"> Let</span></h3>
+
+<h3 style="margin-bottom:-20px;margin-top:22px;font-family: 'Source Code Pro', monospace;">Array:</h3>
 <div class="editor1">
-<div  id="editor6" style="height:360px;">const City = 'Delhi';
-Console.log(City);
+<div  id="editor6" style="height:160px;">myarr=[1,2,3,false,"string"]
 
-{
-    let City = 'Motihari'//Local Variable
-    console.log(City);
+console.log(myarr);
 
-    /*
-    let have only local scope.
-    var have Global scope.
-    */
-}
-
-console.log(City);
-
+console.log('DataType is '+(typeof myarr));
 </div>
 
 
 </div>
 
-<div class="output-button">
+<div class="output-button" style="">
     <div class="">
 	<button class="button3" data-toggle="collapse" data-target="#console.log4" ><i class="fa fa-angle-double-down" aria-hidden="true"></i> Get output</button>
 </div>
 </div>
 
-<div class="collapse" id="console.log4">
+<div class="collapse" id="console.log4" style="">
   <div class="output-showing">
     <h5>OUTPUT</h5>
 
-    <h6>Delhi</h6>
-      <h6>Motihari</h6>
-      <h6>Delhi</h6>
+      <h6>(5) [<span style="color:blue;">1, 2, 3, false, </span><span style="color:red;">"string"</span>]</h6>
+      <h6 style="color:purple;">0: <span style="color:blue;">1</span></h6>
+      <h6 style="color:purple;">1: <span style="color:blue;">2</span></h6>
+      <h6 style="color:purple;">2: <span style="color:blue;">3</span></h6>
+      <h6 style="color:purple;">3: <span style="color:blue;">false</span></h6>
+      <h6 style="color:purple;">3: <span style="color:red;">"string"</span></h6>
+      <h6 style="color:purple;">length: <span style="color:blue;">5</span></h6>
+      <h6>DataType is object</h6>
+      <p style="font-family: 'Source Code Pro', monospace">It is reference DataType</p>
       <p>This output will only showing the only string which is present in <span>"console.error('This is an error');".</span>
         When you try it yourself then goto your HTML page click right button on mouse and goto inspect
         and then goto console after that you able to see output of javascript console.
@@ -490,44 +485,102 @@ console.log(City);
 
 
 
+<!-- display none  no need of this code in this page-->
 
 
-<div class="editor1">
-<div  id="editor" style="height:360px;">const City = 'Delhi';
-Console.log(City);
 
-{
-    //let City = 'Motihari';
-    City = 'Patna'
-    console.log(City);
 
-    /*
-     Thia All treated as Global Variable
-     Check Output
-    */
+
+<h3 style="margin-bottom:-20px;margin-top:22px;font-family: 'Source Code Pro', monospace; display:none; ">Object Literals:</h3>
+<div class="editor1" style="display:none;">
+<div  id="editor" style="height:330px;">let Marks={
+
+	Saroj:94,
+	Shubham:96,
+	Gaurav:90,
+    'Saurav Suman':96
+
 }
+console.log(Marks);
 
-console.log(City);
-
-</div>
-
+console.log('DataType is '+(typeof Marks));
 
 </div>
 
-<div class="output-button">
+
+</div>
+
+<div class="output-button" style="display:none;">
     <div class="">
 	<button class="button3" data-toggle="collapse" data-target="#console.log9" ><i class="fa fa-angle-double-down" aria-hidden="true"></i> Get output</button>
 </div>
 </div>
 
-<div class="collapse" id="console.log9">
+<div class="collapse" id="console.log9" style="display:none;">
   <div class="output-showing">
     <h5>OUTPUT</h5>
 
-    <h6>Delhi</h6>
-      <h6>Patna</h6>
-      <h6>Patna</h6>
+      <h6>{<span style="color:grey">Saroj: </span><span style="color:blue"> 94</span>,
+          <span style="color:grey"> Shubham: </span><span style="color:blue"> 96</span>,
+          <span style="color:grey"> Gaurav: </span><span style="color:blue"> 90</span>,
+          <span style="color:grey"> Saurav Suman: </span><span style="color:blue"> 96</span>}</h6>
+      <h6 style="color:purple;">Saroj: <span style="color:blue;">94</span></h6>
+      <h6 style="color:purple;">Shubham: <span style="color:blue;">96</span></h6>
+      <h6 style="color:purple;">Gaurav: <span style="color:blue;">90</span></h6>
+      <h6 style="color:purple;">Saurav Suman: <span style="color:blue;">96</span></h6>
+      <h6>DataType is object</h6>
+      <p style="font-family: 'Source Code Pro', monospace">It is reference DataType</p>
+
       <p>This output will only showing the only string which is present in <span>"console.error('This is an error');".</span>
+        When you try it yourself then goto your HTML page click right button on mouse and goto inspect
+        and then goto console after that you able to see output of javascript console.
+    </p>
+  </div>
+</div>
+
+                 <div class="content">
+    <div class="note">
+       <p><span style="font-weight:bold;letter-spacing:2px;font-size:22px;">Note</span><i class="fa fa-fw fa-pencil" style="font-size:22px;padding-right:10px;" aria-hidden="true">:</i>
+           Object Literals act as a Dictionary, Which Map to some Value, Example: ( <span style="color:grey"> Key</span> , <span style="color:black;font-weight:bold;"> Value</span> ) .</p>
+    </div>
+</div>
+
+
+
+
+<h3 style="margin-bottom:-20px;margin-top:22px;font-family: 'Source Code Pro', monospace; display:none;">Function:</h3>
+<div class="editor1" style="display:none;">
+<div  id="editor10" style="padding-top:-20px;height:310px;">function Add(num1,num2) {
+    return num1+num2;
+}
+
+var a= 100;
+var b = 20;
+
+const Sum = Add(a , b) ;
+
+console.log('Sum is ',Sum);
+
+console.log('DataType is '+(typeof Add));
+</div>
+
+
+</div>
+
+<div class="output-button" style="display:none;">
+    <div class="">
+	<button class="button3" data-toggle="collapse" data-target="#console.log10" ><i class="fa fa-angle-double-down" aria-hidden="true"></i> Get output</button>
+         <span style="padding-left:10px;"><a href="#" style="color:red"> Learn JS Function</a></span>
+</div>
+</div>
+
+<div class="collapse" id="console.log10" style="display:none;">
+  <div class="output-showing">
+    <h5>OUTPUT</h5>
+
+<h6>Sum is <span style="color:blue;">120</span></h6>
+      <h6>DataType is function</h6>
+      <p>This output will only showing the only string which is present in <span>"console.warn('This is warning');".</span>
         When you try it yourself then goto your HTML page click right button on mouse and goto inspect
         and then goto console after that you able to see output of javascript console.
     </p>
@@ -536,10 +589,67 @@ console.log(City);
 
 
 
+
+<h3 style="margin-bottom:-20px;margin-top:22px;font-family: 'Source Code Pro', monospace; display:none;">Date:</h3>
+<div class="editor1" style="display:none;">
+<div  id="editor1" style="height:520px;"><textarea><!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="todayDate()">GET TODAY DATE AND TIME</button>
+
+<h6 id="date"></h6>
+<script>
+
+let date;
+
+function todayDate () {
+   date = new Date();
+   document.getElementById('date').innerHTML = date;
+}
+
+console.log('DataType is '+(typeof date));
+
+</script>
+
+</body>
+</html></textarea></div>
+
+
+</div>
+
+<div class="output-button" style="display:none;">
+    <div class="">
+	<button class="button3" data-toggle="collapse" data-target="#console.log12" ><i class="fa fa-angle-double-down" aria-hidden="true"></i> Get output</button>
+         <span style="padding-left:10px;"><a href="#" style="color:red"> Learn JS Function</a></span>
+</div>
+</div>
+
+<div class="collapse" id="console.log12" style="display:none;">
+  <div class="output-showing ">
+    <h5>OUTPUT</h5>
+<button onclick="todayDate()">GET TODAY DATE AND TIME</button>
+      <h6 id="date1"></h6>
+      <h6>DataType is object</h6>
+      <p style="font-family: 'Source Code Pro', monospace">It is reference DataType</p>
+
+  </div>
+</div>
+
+                   <div class="content" style="display:none;">
+    <div class="note">
+       <p><span style="font-weight:bold;letter-spacing:2px;font-size:22px;">Note</span><i class="fa fa-fw fa-pencil" style="font-size:22px;padding-right:10px;" aria-hidden="true">:</i>
+         Date function gives the current Date and Time, Which based on your Geographical region.</p></div>
+</div>
+
+<!-- here un unusal code is ended-->
+
+
+
                     <div class="" style="margin-bottom:40px; margin-top:10px;">
                      <div class="" style="display:flex">
-                    <a href="{% url 'JavascriptIntro' %}" ><button  class="button card3"><i class='fa fa-angle-double-left'></i> Prev</button></a>
-                         <a href="{% url 'jsDatatypes' %}"><button class="button card3 lef">Next <i class='fa fa-angle-double-right'></i></button></a>
+                     <a href="{% url 'jsTypeConversion' %}" ><button  class="button card3"><i class='fa fa-angle-double-left'></i> Prev</button></a>
+                    <a href="#"><button  class="button card3 lef">Next <i class='fa fa-angle-double-right'></i></button></a>
                 </div>
                 </div>
 

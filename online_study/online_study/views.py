@@ -24,6 +24,11 @@ def jsDatatypes(requests):
 def jsTypeConversion(requests):
     return render(requests,'JavascriptFiles/jsTypeconversion.html',{})
 
+def jsString(requests):
+    return render(requests,'JavascriptFiles/js String.html',{})
+
+
+
 def Home(requests):
     return render(requests,'index.html',{})
 

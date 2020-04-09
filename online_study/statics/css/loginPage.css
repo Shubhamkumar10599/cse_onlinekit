@@ -1,8 +1,30 @@
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,900;1,400&display=swap');
+
+
 
 * {
 	box-sizing: border-box;
+}
+
+
+.lgo h1{
+font-family: 'Source Code Pro', monospace;
+font-weight:900;
+}
+
+.lgo{
+font-family: 'Source Code Pro', monospace;
+font-weight:900;
+cursor:pointer;
+}
+
+
+.lgo span{
+background: #ff9933;
+color:white;
+border-radius:7px;
 }
 
 body {

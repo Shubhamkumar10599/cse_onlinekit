@@ -209,7 +209,7 @@
                <div class="definition">
 
                    <div class="intro">
-                      <p>String in Javascript.</p>
+                      <p>String in Javascript. Please read comments in code carefully.</p>
                    </div>
 
 <div class="codeTag">
@@ -228,8 +228,8 @@
      <p><i class='fa fa-angle-double-right'></i>String<span style="font-weight:bold"> LowerCase</span></p>
      <p><i class='fa fa-angle-double-right'></i>String<span style="font-weight:bold"> UpperCase</span></p>
      <p><i class='fa fa-angle-double-right'></i>String<span style="font-weight:bold">  Index</span></p>
-     <p><i class='fa fa-angle-double-right'></i>String<span style="font-weight:bold"> LastIndex</span></p>
      <p><i class='fa fa-angle-double-right'></i>String<span style="font-weight:bold"> CharAt</span></p>
+             <p><i class='fa fa-angle-double-right'></i>String<span style="font-weight:bold"> startsWith</span></p>
          <p><i class='fa fa-angle-double-right'></i>String<span style="font-weight:bold"> endsWith</span></p>
          <p><i class='fa fa-angle-double-right'></i>String<span style="font-weight:bold"> subString</span></p>
          <p><i class='fa fa-angle-double-right'></i>String<span style="font-weight:bold"> includes</span></p>
@@ -256,15 +256,17 @@
 
 <h3 style="margin-bottom:-20px;margin-top:22px;font-family: 'Source Code Pro', monospace;">String <span>Concatenation</span>:</h3>
 <div class="editor1">
-<div  id="editor11" style="height:400px;">let str1 = 'Harry';
+<div  id="editor11" style="height:500px;">let str1 = 'Harry';
 let str2 = ' ';
 let str3 = 'Potter'
 let str = str1 + str2 + str3;
 //Here concatenate all three different String in single variable.
 console.log(str);
 
+
 console.log('Lord' , 'Shiva');
 //Concatenation of two string.
+
 
 let string = 'Reading ' + 'Books ';
 string = string.concat('are ' , 'Good ' , 'Practice.');
@@ -403,18 +405,27 @@ console.log(string);
     </div>
               </div>
 
-<h3 style="margin-bottom:-20px;margin-top:22px;font-family: 'Source Code Pro', monospace;">Change to Boolean():</h3>
+<h3 style="margin-bottom:-20px;margin-top:22px;font-family: 'Source Code Pro', monospace;">String <span>Index</span>:</h3>
 <div class="editor1">
-<div  id="editor5" style="height:280px;">let number0 = 0;
-number0 = Boolean(number0);
-//Here we change number 0 to boolean.
-console.log(number0 , (typeof number0));
+<div  id="editor5" style="height:580px;">let string = "India is a secular country."
+console.log("char at index 1 " , string[1]);
+//Here string[1] is represent one char of whole string and 1 is corresponding index number.
 
 
-let number1 = 1;
-number1 = Boolean(number1);
-//Here we change number 1 to boolean.
-console.log(number1, (typeof number1));
+console.log("Index of 'I':" , string.indexOf('I'));
+//indexOf('char') it gives the index number of corresponding character.
+
+
+console.log("First Index of 'n':" , string.indexOf('n'));
+//Default it give the first index of character 'n', if one or more n is present in string.;
+
+
+console.log("Last Index of 'n':" , string.lastIndexOf('n'))
+//it gives last index of char 'n'.
+
+
+console.log("charAt index 1 " , string.charAt(1));
+//Here charAt gives the character value at corresponding index number.
 </div>
 
 
@@ -429,8 +440,14 @@ console.log(number1, (typeof number1));
 <div class="collapse" id="console.log3">
   <div class="output-showing">
     <h5>OUTPUT</h5>
-      <h6><span style="color:blue">false</span> " <span style="color:Tomato">boolean</span> "</h6>
-      <h6><span style="color:blue">true</span> " <span style="color:Tomato">boolean</span> "</h6>
+      <h6>Char at index 1: n</h6>
+     <h6>Index of 'I':<span style="color:blue"> 0</span></h6>
+      <h6>First index of 'n':<span style="color:blue"> 1</span></h6>
+      <h6>last index of 'n':<span style="color:blue"> 22</span></h6>
+      <h6>CharAt index 1: n</h6>
+
+
+
 
       <p>This output will only showing the only string which is present in <span>"console.log([34,3,2,1,])".</span>
         When you try it yourself then goto your HTML page click right button on mouse and goto inspect
@@ -440,18 +457,41 @@ console.log(number1, (typeof number1));
 </div>
 
 
-<div class="content" style="margin-top:30px;margin-bottom:10px;font-family: 'Cairo', sans-serif;border-left:7px solid orange;">
-    <h2>Reference DataTypes <i class='fa fa-angle-double-right'></i></h2>
-</div>
 
 
-<h3 style="margin-bottom:-20px;margin-top:22px;font-family: 'Source Code Pro', monospace;">Array:</h3>
+<h3 style="margin-bottom:-20px;margin-top:22px;font-family: 'Source Code Pro', monospace;">String <span>Boolean Function</span>:</h3>
 <div class="editor1">
-<div  id="editor6" style="height:160px;">myarr=[1,2,3,false,"string"]
+<div  id="editor6" style="height:760px;">let string = "India is a secular country"
 
-console.log(myarr);
+console.log('Is sentence start with England: ' , string.startsWith('England'));
+/*
+    It gives boolean value true or false,
+    Whether the sentence starts with string 'England' or not.
+*/
 
-console.log('DataType is '+(typeof myarr));
+
+console.log('Is sentence ends with country: ' , string.endsWith('country'));
+/*
+    It gives boolean value true or false,
+    Whether the sentence ends with string ' . ' dot  or not.
+*/
+
+
+console.log('Is sentence include is: ' , string.includes('is'));
+/*
+    It gives boolean value true or false,
+    Whether the sentence includes the string 'is' or not.
+*/
+
+
+console.log(string.substring(1,9));
+/*
+    it gives the substring between the given range.
+    Here the range is (1 , 9).
+*/
+
+
+console.log(string.substring(-4));
 </div>
 
 
@@ -467,15 +507,13 @@ console.log('DataType is '+(typeof myarr));
   <div class="output-showing">
     <h5>OUTPUT</h5>
 
-      <h6>(5) [<span style="color:blue;">1, 2, 3, false, </span><span style="color:red;">"string"</span>]</h6>
-      <h6 style="color:purple;">0: <span style="color:blue;">1</span></h6>
-      <h6 style="color:purple;">1: <span style="color:blue;">2</span></h6>
-      <h6 style="color:purple;">2: <span style="color:blue;">3</span></h6>
-      <h6 style="color:purple;">3: <span style="color:blue;">false</span></h6>
-      <h6 style="color:purple;">3: <span style="color:red;">"string"</span></h6>
-      <h6 style="color:purple;">length: <span style="color:blue;">5</span></h6>
-      <h6>DataType is object</h6>
-      <p style="font-family: 'Source Code Pro', monospace">It is reference DataType</p>
+      <h6>Is sentence start with England:<span style="color:blue"> false</span></h6>
+      <h6>Is sentence ends with country:<span style="color:blue"> true</span></h6>
+
+      <h6>Is sentence includes is:<span style="color:blue"> true</span></h6>
+      <h6>ndia is</h6>
+      <h6>India is a secular country</h6>
+
       <p>This output will only showing the only string which is present in <span>"console.error('This is an error');".</span>
         When you try it yourself then goto your HTML page click right button on mouse and goto inspect
         and then goto console after that you able to see output of javascript console.
@@ -485,14 +523,14 @@ console.log('DataType is '+(typeof myarr));
 
 
 
-<!-- display none  no need of this code in this page-->
 
 
 
 
 
-<h3 style="margin-bottom:-20px;margin-top:22px;font-family: 'Source Code Pro', monospace; display:none; ">Object Literals:</h3>
-<div class="editor1" style="display:none;">
+
+<h3 style="margin-bottom:-20px;margin-top:22px;font-family: 'Source Code Pro', monospace; ">Object Literals:</h3>
+<div class="editor1" style="">
 <div  id="editor" style="height:330px;">let Marks={
 
 	Saroj:94,
@@ -510,13 +548,13 @@ console.log('DataType is '+(typeof Marks));
 
 </div>
 
-<div class="output-button" style="display:none;">
+<div class="output-button" style="">
     <div class="">
 	<button class="button3" data-toggle="collapse" data-target="#console.log9" ><i class="fa fa-angle-double-down" aria-hidden="true"></i> Get output</button>
 </div>
 </div>
 
-<div class="collapse" id="console.log9" style="display:none;">
+<div class="collapse" id="console.log9" style="">
   <div class="output-showing">
     <h5>OUTPUT</h5>
 
@@ -538,18 +576,13 @@ console.log('DataType is '+(typeof Marks));
   </div>
 </div>
 
-                 <div class="content">
-    <div class="note">
-       <p><span style="font-weight:bold;letter-spacing:2px;font-size:22px;">Note</span><i class="fa fa-fw fa-pencil" style="font-size:22px;padding-right:10px;" aria-hidden="true">:</i>
-           Object Literals act as a Dictionary, Which Map to some Value, Example: ( <span style="color:grey"> Key</span> , <span style="color:black;font-weight:bold;"> Value</span> ) .</p>
-    </div>
-</div>
 
 
 
 
-<h3 style="margin-bottom:-20px;margin-top:22px;font-family: 'Source Code Pro', monospace; display:none;">Function:</h3>
-<div class="editor1" style="display:none;">
+
+<h3 style="margin-bottom:-20px;margin-top:22px;font-family: 'Source Code Pro', monospace;">Function:</h3>
+<div class="editor1" style="">
 <div  id="editor10" style="padding-top:-20px;height:310px;">function Add(num1,num2) {
     return num1+num2;
 }
@@ -567,14 +600,14 @@ console.log('DataType is '+(typeof Add));
 
 </div>
 
-<div class="output-button" style="display:none;">
+<div class="output-button" style="">
     <div class="">
 	<button class="button3" data-toggle="collapse" data-target="#console.log10" ><i class="fa fa-angle-double-down" aria-hidden="true"></i> Get output</button>
          <span style="padding-left:10px;"><a href="#" style="color:red"> Learn JS Function</a></span>
 </div>
 </div>
 
-<div class="collapse" id="console.log10" style="display:none;">
+<div class="collapse" id="console.log10" style="">
   <div class="output-showing">
     <h5>OUTPUT</h5>
 
@@ -588,10 +621,9 @@ console.log('DataType is '+(typeof Add));
 </div>
 
 
-
-
+<!-- there is no need of this code-->
 <h3 style="margin-bottom:-20px;margin-top:22px;font-family: 'Source Code Pro', monospace; display:none;">Date:</h3>
-<div class="editor1" style="display:none;">
+<div class="editor1" style="display:none">
 <div  id="editor1" style="height:520px;"><textarea><!DOCTYPE html>
 <html>
 <body>

@@ -188,7 +188,9 @@ margin:0;
  font-size:17px;
 
 }
-
+button:focus {
+	outline: none;
+}
 
 
 .button3{

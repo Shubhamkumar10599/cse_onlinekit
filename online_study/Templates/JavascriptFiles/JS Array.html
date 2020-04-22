@@ -32,7 +32,7 @@
 
 
 
-    <title>Javascript Variables</title>
+    <title>Javascript Array and Object</title>
   </head>
   <body>
 
@@ -54,15 +54,16 @@
          </div>
 
 
+
      <a class="lg11" href="{% url 'Home' %}"><i class="fa fa-fw fa-home" aria-hidden="true"></i> Home</a>
 
-         <a href="{% url 'Cintro' %}" class="navItem lg9">C</a>
+        <a href="{% url 'Cintro' %}" class="navItem lg9">C</a>
            <a href="{% url 'Cppintro' %}" class="navItem lg8">C++</a>
                <a href="{% url 'Javaintro' %}" class="navItem lg6">Java</a>
                  <a href="{% url 'Pythonintro' %}" class="navItem lg5">Python</a>
                    <a href="{% url 'Djangointro' %}" class="navItem lg6">Django</a>
                    <a href="{% url 'HTMLintro' %}" class="navItem lg3">HTML</a>
-           <a href="{% url 'Cssintro' %}" class="navItem lg2 active">CSS</a>
+           <a href="{% url 'Cssintro' %}" class="navItem lg2">CSS</a>
                  <a href="{% url 'JavascriptIntro' %}" class="navItem lg2 active">JavaScript</a>
                <a href="{% url 'Sqlintro' %}" class="navItem lg2">SQL</a>
          <a href="{% url 'Gatesyl' %}" class="navItem lg7">GATE</a>
@@ -79,7 +80,7 @@
   <div class="dropdown-content" id="myDropdown">
 
 
-     <a href="{% url 'Cintro' %}">C</a>
+    <a href="{% url 'Cintro' %}">C</a>
       <a href="{% url 'Cppintro' %}">C++</a>
     <a href="{% url 'Javaintro' %}">Java</a>
        <a href="{% url 'Pythonintro' %}">Python</a>
@@ -93,10 +94,9 @@
     <a href="{% url 'Quiz' %}">Quiz</a>
 
 
-
   </div>
   </div>
-     <a class="active icon1" href="{% url 'Home' %}"><i class="fa fa-fw fa-home" aria-hidden="true"></i></a>
+    <a class="active icon1" href="{% url 'Home' %}"><i class="fa fa-fw fa-home" aria-hidden="true"></i></a>
 
 
 
@@ -108,6 +108,7 @@
 
          <a href="#" class ="icon"><i class="fa fa-fw fa-user peach-gradient"></i></a>
          <a  class ="icon" href ="{% url 'loginPage' %}"><i class="fa fa-sign-in"></i></a>
+
 </div>
 </header>
       <!-- end of top nav-->
@@ -122,7 +123,8 @@
           <div class="">
 
           <div id="sidebarMenu" class="sidenav">
-<div class="row">
+
+             <div class="row">
 
     <div style="margin-top:-30px;margin-left:29px; color: #32a3b1;" class="lgo" onclick="location='{% url 'Home' %}'" title="jangoCS Logo">
         <h1>jango<span>CS</span></h1>
@@ -131,13 +133,19 @@
 </div>
 
 
-  <a href="{% url 'JavascriptIntro' %}" class="">JS Introduction</a>
-    <a href="{% url 'javascriptVariables' %}" class="active1">JS Variables</a>
-         <a href="{% url 'jsDatatypes' %}" class="">JS DataTypes</a>
-                      <a href="{% url 'jsTypeConversion' %}" class="">JS TypeConversion</a>
 
-              <a href="{% url 'jsString' %}" class="">JS String</a>
- <a href="{% url 'jsArray' %}" class="">JS Array</a>
+
+
+
+
+
+    <a href="{% url 'JavascriptIntro' %}" class="">JS Introduction</a>
+    <a href="{% url 'javascriptVariables' %}" class="">JS Variables</a>
+     <a href="{% url 'jsDatatypes' %}" class="">JS DataTypes</a>
+              <a href="{% url 'jsTypeConversion' %}" class="">JS TypeConversion</a>
+         <a href="{% url 'jsString' %}" class="">JS String</a>
+ <a href="{% url 'jsArray' %}" class="active1">JS Array</a>
+
 
 
 
@@ -145,7 +153,7 @@
 
     <div id="" class="sidenav1">
 
-       <div class="row">
+        <div class="row">
 
     <div style="margin-top:-30px;margin-left:29px; color: #32a3b1;" class="lgo" onclick="location='{% url 'Home' %}'" title="jangoCS Logo">
         <h1>jango<span>CS</span></h1>
@@ -165,13 +173,11 @@
 
 
          <a href="{% url 'JavascriptIntro' %}" class="">JS Introduction</a>
-    <a href="{% url 'javascriptVariables' %}" class="active1">JS Variables</a>
-        <a href="{% url 'jsDatatypes' %}" class="">JS DataTypes</a>
-                <a href="{% url 'jsTypeConversion' %}" class="">JS TypeConversion</a>
-
-                      <a href="{% url 'jsString' %}" class="">JS String</a>
- <a href="{% url 'jsArray' %}" class="">JS Array</a>
-
+    <a href="{% url 'javascriptVariables' %}" class="">JS Variables</a>
+         <a href="{% url 'jsDatatypes' %}" class="">JS DataTypes</a>
+        <a href="{% url 'jsTypeConversion' %}" class="">JS TypeConversion</a>
+                <a href="{% url 'jsString' %}" class="">JS String</a>
+ <a href="{% url 'jsArray' %}" class="active1">JS Array</a>
 
 
       </div>
@@ -190,41 +196,53 @@
                   <div class="container col res" style="width:;">
 
                 <div class="header-tag">
-                  <h1>Javascript Variables</h1>
+                  <h1>Javascript Array and Object</h1>
 
               </div>
                 <div class="" style="display:flex">
-                    <a href="{% url 'JavascriptIntro' %}" ><button  class="button card3"><i class='fa fa-angle-double-left'></i> Prev</button></a>
-                    <a href="{% url 'jsDatatypes' %}"><button  class="button card3 lef">Next <i class='fa fa-angle-double-right'></i></button></a>
+                    <a href="{% url 'jsString' %}" ><button  class="button card3"><i class='fa fa-angle-double-left'></i> Prev</button></a>
+                    <a href="#"><button  class="button card3 lef">Next <i class='fa fa-angle-double-right'></i></button></a>
                 </div>
 
 
                <div class="definition">
 
                    <div class="intro">
-                      <p>Variables in Javascript. Let,Const,Var</p>
+                      <p>String in Javascript. Please read comments in code carefully.</p>
                    </div>
 
 <div class="codeTag">
-    <h3 style="font-family: 'Cairo', sans-serif;">Rules for Javascript Variables:</h3>
-    <p></p>
-    <p><i class='fa fa-angle-double-right'></i> Javascript Variables cannot start with number.</p>
-    <p><i class='fa fa-angle-double-right'></i> Javascript Variables can start with underscore(_),dollar($) and Letter.</p>
-    <p><i class='fa fa-angle-double-right'></i> Javascript Variables are cases sensitive.</p>
-    <p><i class='fa fa-angle-double-right'></i> Javascript Variables cannot contain spaces between them like (vari ables) wrong here.</p>
-    <p>Example like if,else,for,while,do etc are certain inbuilt keywords which are not used as variables.</p>
+    <h3 style="font-family: 'Cairo', sans-serif;">String</h3>
+    <p><i class='fa fa-angle-double-right'></i>There are various operation which is perform on String. </p>
 </div>
 
 
 
-<div class="content" style="font-family: 'Source Code Pro', monospace;">
-    <p>WE highly recommended to not use dollar($) and underscore(_) as starting character of variables because it is mainly used as keywords in advanced javaScript framework like JQUERY.</p>
+<div class="content" style="font-family: 'Source Code Pro', monospace;list-style-type:none;">
 
-    <p>Here we use External file of javaScript.</p>
-    <p>File.js You can give any name to your javaScript file but it is meaningful and related your project and your learning purpose.</p>
-    <div class="note">
-       <p><span style="font-weight:bold;letter-spacing:2px;font-size:22px;">Note</span><i class="fa fa-fw fa-pencil" style="font-size:22px;padding-right:10px;" aria-hidden="true">:</i> It is Good practice to write code of including Javascript file into HTML file is just before ending of body tag.</p>
-    </div>
+    <h4>Various Operations on String are:</h4>
+
+     <p><i class='fa fa-angle-double-right'></i>String<span style="font-weight:bold"> Concatenation</span></p>
+     <p><i class='fa fa-angle-double-right'></i>String<span style="font-weight:bold"> Length</span></p>
+     <p><i class='fa fa-angle-double-right'></i>String<span style="font-weight:bold"> LowerCase</span></p>
+     <p><i class='fa fa-angle-double-right'></i>String<span style="font-weight:bold"> UpperCase</span></p>
+     <p><i class='fa fa-angle-double-right'></i>String<span style="font-weight:bold">  Index</span></p>
+     <p><i class='fa fa-angle-double-right'></i>String<span style="font-weight:bold"> CharAt</span></p>
+             <p><i class='fa fa-angle-double-right'></i>String<span style="font-weight:bold"> startsWith</span></p>
+         <p><i class='fa fa-angle-double-right'></i>String<span style="font-weight:bold"> endsWith</span></p>
+         <p><i class='fa fa-angle-double-right'></i>String<span style="font-weight:bold"> subString</span></p>
+         <p><i class='fa fa-angle-double-right'></i>String<span style="font-weight:bold"> includes</span></p>
+         <p><i class='fa fa-angle-double-right'></i>String<span style="font-weight:bold"> Slice</span></p>
+         <p><i class='fa fa-angle-double-right'></i>String<span style="font-weight:bold"> Split</span></p>
+         <p><i class='fa fa-angle-double-right'></i>String<span style="font-weight:bold"> Replace</span></p>
+         <p><i class='fa fa-angle-double-right'></i>String<span style="font-weight:bold"> BackTicks</span></p>
+
+
+
+
+
+
+
 
 
 
@@ -233,103 +251,91 @@
 
 
 
-<h3 style="margin-bottom:-20px;">Example <span style="color: #13D757"> index.html</span></h3>
+
+
+<h3 style="margin-bottom:-20px;margin-top:22px;font-family: 'Source Code Pro', monospace;">String <span>Concatenation</span>:</h3>
 <div class="editor1">
-<div  id="editor1" style="height:330px;"><textarea><!DOCTYPE html>
-<html>
-<body>
+<div  id="editor11" style="height:500px;">let str1 = 'Harry';
+let str2 = ' ';
+let str3 = 'Potter'
+let str = str1 + str2 + str3;
+//Here concatenate all three different String in single variable.
+console.log(str);
 
-<h1 id="demo1"></h1>
-<p id="demo2"></p>
 
-<button style="" onclick="MyFunction()">CLICK ME to KNOW THE POWER OF ID</button>
+console.log('Lord' , 'Shiva');
+//Concatenation of two string.
 
-<script type="text/javascript" src="Main.js"></script>
-</body>
-</html></textarea>
+
+let string = 'Reading ' + 'Books ';
+string = string.concat('are ' , 'Good ' , 'Practice.');
+console.log(string);
+//Here we use Concat function for concatenation of string.
+//By this Method You can concat any numbder of string.
 </div>
-
-
 </div>
-
 <div class="output-button">
-
+    <div class="">
+	<button class="button3" data-toggle="collapse" data-target="#console.log"><i class="fa fa-angle-double-down" aria-hidden="true"></i> Get output</button>
+</div>
 </div>
 
 <div class="collapse" id="console.log">
   <div class="output-showing">
     <h5>OUTPUT</h5>
 
-      <h6>Hello World</h6>
+      <h6>Harry Potter</h6>
+      <h6>Lord Shiva</h6>
+      <h6>Reading Books are Good practice.</h6>
       <p>This output will only showing the only string which is present in <span>"console.log('Hello World');".</span>
         When you try it yourself then goto your HTML page click right button on mouse and goto inspect
-        and then goto console after that you able to see output of javaScript console.
+        and then goto console after that you able to see output of javascript console.
     </p>
   </div>
 </div>
 
 
 
-<h3 style="margin-bottom:-20px;margin-top:22px;">Javascript <span style="font-weight:bold;padding-left:10px;"> Main.js</span></h3>
+
+
+
+<h3 style="margin-bottom:-20px;margin-top:22px;font-family: 'Source Code Pro', monospace;">String <span>Length</span>:</h3>
 <div class="editor1" style="">
-<div  id="editor2" style="padding-top:-20px;height:230px;">function MyFunction() {
+<div  id="editor2" style="padding-top:-20px;height:150px;">let string = 'Saurav ';
+len = string.length;
+//Here we use length key to find string length.
 
-var demo1 = document.getElementById('demo1');
-demo1.innerText='This is big header.';
-
-var demo2 = document.getElementById('demo2');
-demo2.innerText='This is paragraph.';
-
-}
+console.log('Length:',len);
 </div>
-
-
 </div>
 
 <div class="output-button">
     <div class="">
 	<button class="button3" data-toggle="collapse" data-target="#console.warn" ><i class="fa fa-angle-double-down" aria-hidden="true"></i> Get output</button>
-         <span style="padding-left:10px;"><a href="#" style="color:red"> Learn JS Function</a></span>
+         <span style="padding-left:10px;"><a href="#" style="color:red"></a></span>
 </div>
 </div>
 
 <div class="collapse" id="console.warn">
   <div class="output-showing">
     <h5>OUTPUT</h5>
+      <h6>Length: <span style="color:blue;">7</span></h6>
 
-
-
-<button style="" onclick="MyFunction1()">CLICK ME to KNOW THE POWER OF ID</button>
-
-       <h1 id="demo3"></h1>
-      <p id="demo4"></p>
-
-
+      <p>This output will only showing the only string which is present in <span>"console.warn('This is warning');".</span>
+        When you try it yourself then goto your HTML page click right button on mouse and goto inspect
+        and then goto console after that you able to see output of javascript console.
+    </p>
   </div>
 </div>
 
-<h3 style="margin-bottom:-20px;margin-top:22px;">Javascript <span style="font-weight:bold;padding-left:10px;"> Var</span></h3>
+<h3 style="margin-bottom:-20px;margin-top:22px;font-family: 'Source Code Pro', monospace;">String <span>LowerCase</span>:</h3>
 <div class="editor1">
-<div  id="editor3" style="height:420px;">var Name = 'Saurav';
-var Marks = 100;
-var Channel;
-//Here Variable Channel is not Defined.
+<div  id="editor3" style="height:150px;">let string = 'A B C D E F G';
+string = string.toLowerCase();
+//it is the LowerCase Method which change the string LowerCase.
 
-console.log(Name , Marks , Channel);
-
-var City = 'Motihari';
-console.log(City);
-
-City='Delhi';
-//Here we can change the value of City var.
-
-Channel='YouTube';
-//Here Channel is defined.
-
-console.log(Channel , City);
+console.log(string);
 </div>
-
-
 </div>
 
 <div class="output-button">
@@ -341,12 +347,12 @@ console.log(Channel , City);
 
 
 
+
+
 <div class="collapse" id="console.log1">
   <div class="output-showing">
     <h5>OUTPUT</h5>
-      <h6>Saurav <span style="color:blue"> 100</span> <span style="color:grey;"> undefined</span></h6>
-      <h6>Motihari</h6>
-      <h6>YouTube Delhi</h6>
+     <h6>a b c d e f g</h6>
 
       <p>This output will only showing the only string which is present in <span>"console.log(34 + 4);".</span>
         When you try it yourself then goto your HTML page click right button on mouse and goto inspect
@@ -355,32 +361,18 @@ console.log(Channel , City);
   </div>
 </div>
 
-<div class="content" style="font-family: 'Source Code Pro', monospace;">
-               <p>The Variable of type Var is can change easily anywhere of javascript code.</p>
-               <h4>There are two types of comments:</h4>
-                <p>1. SingleLine Comment</p>
-                <p>2. MultiLine Comment</p>
-            </div>
 
 
 
-<h3 style="margin-bottom:-20px;margin-top:22px;">Javascript <span style="font-weight:bold;padding-left:10px;"> Comment</span></h3>
+
+<h3 style="margin-bottom:-20px;margin-top:22px;font-family: 'Source Code Pro', monospace;">String <span>UpperCase</span>:</h3>
 <div class="editor1">
-<div  id="editor4" style="height:360px;">
-/*
-    This is MultiLine comments.
+<div  id="editor4" style="height:150px;">let string = 'a b c d e f g';
+string = string.toUpperCase();
+//it is the UpperCase Method which change the string UpperCase.
 
-    You can Write Anything important which is related to your code.
+console.log(string);
 
-    It is used to optimized the code.
-
-    Comment is also essential for understandability of code.
-
-    for other Developers.
-
-*/
-
-// This is Single line Comment.
 </div>
 
 
@@ -388,13 +380,15 @@ console.log(Channel , City);
 
 <div class="output-button">
     <div class="">
+        	<button class="button3" data-toggle="collapse" data-target="#console.log2" ><i class="fa fa-angle-double-down" aria-hidden="true"></i> Get output</button>
+
     </div>
 </div>
 
 <div class="collapse" id="console.log2">
   <div class="output-showing">
     <h5>OUTPUT</h5>
-      <h6 style="color:red;"><i class="fa fa-times-circle" style="color:red;"></i> This is an error</h6>
+      <h6>A B C D E F G</h6>
       <p>This output will only showing the only string which is present in <span>"console.error('This is an error');".</span>
         When you try it yourself then goto your HTML page click right button on mouse and goto inspect
         and then goto console after that you able to see output of javascript console.
@@ -403,16 +397,27 @@ console.log(Channel , City);
 </div>
 
 
-<h3 style="margin-bottom:-20px;margin-top:22px;">Javascript <span style="font-weight:bold;padding-left:10px;"> Const</span></h3>
+<h3 style="margin-bottom:-20px;margin-top:22px;font-family: 'Source Code Pro', monospace;">String <span>Index</span>:</h3>
 <div class="editor1">
-<div  id="editor5" style="height:200px;">const Marks = 88;
-console.log(Marks);
+<div  id="editor5" style="height:580px;">let string = "India is a secular country."
+console.log("char at index 1 " , string[1]);
+//Here string[1] is represent one char of whole string and 1 is corresponding index number.
 
-Marks = 90;
-/*
-    Here We cannot chane the value of const.
-    Because Const means Constant and const Never be Changed.
-*/
+
+console.log("Index of 'I':" , string.indexOf('I'));
+//indexOf('char') it gives the index number of corresponding character.
+
+
+console.log("First Index of 'n':" , string.indexOf('n'));
+//Default it give the first index of character 'n', if one or more n is present in string.;
+
+
+console.log("Last Index of 'n':" , string.lastIndexOf('n'))
+//it gives last index of char 'n'.
+
+
+console.log("charAt index 1 " , string.charAt(1));
+//Here charAt gives the character value at corresponding index number.
 </div>
 
 
@@ -427,9 +432,14 @@ Marks = 90;
 <div class="collapse" id="console.log3">
   <div class="output-showing">
     <h5>OUTPUT</h5>
-     <h6 style="color:blue;">88</h6>
-     <h6 style="">Marks = <span style="color:blue">90</span>; not change  <i class="fa fa-times-circle" style="color:red;"></i></h6>
-      <h6 style="color:red;">Assignment to Constant Variables is not allow</h6>
+      <h6>Char at index 1: n</h6>
+     <h6>Index of 'I':<span style="color:blue"> 0</span></h6>
+      <h6>First index of 'n':<span style="color:blue"> 1</span></h6>
+      <h6>last index of 'n':<span style="color:blue"> 22</span></h6>
+      <h6>CharAt index 1: n</h6>
+
+
+
 
       <p>This output will only showing the only string which is present in <span>"console.log([34,3,2,1,])".</span>
         When you try it yourself then goto your HTML page click right button on mouse and goto inspect
@@ -439,50 +449,52 @@ Marks = 90;
 </div>
 
 
-<div class="content">
 
-    <div class="note">
-       <p><span style="font-weight:bold;letter-spacing:2px;font-size:22px;">Note</span><i class="fa fa-fw fa-pencil" style="font-size:22px;padding-right:10px;" aria-hidden="true">:</i>
-           In Advanced Javascript we mostly used Const and Let instead of Var.</p>
-    </div>
 
-</div>
-
-<h3 style="margin-bottom:-20px;margin-top:22px;">Javascript <span style="font-weight:bold;padding-left:10px;"> Let</span></h3>
+<h3 style="margin-bottom:-20px;margin-top:22px;font-family: 'Source Code Pro', monospace;">String <span>Boolean Function</span>:</h3>
 <div class="editor1">
-<div  id="editor6" style="height:360px;">const City = 'Delhi';
-Console.log(City);
+<div  id="editor6" style="height:560px;">let string = "India is a secular country";
 
-{
-    let City = 'Motihari'//Local Variable
-    console.log(City);
+console.log('Is sentence start with England: ' , string.startsWith('England'));
+/*
+    It gives boolean value true or false,
+    Whether the sentence starts with string 'England' or not.
+*/
 
-    /*
-    let have only local scope.
-    var have Global scope.
-    */
-}
 
-console.log(City);
+console.log('Is sentence ends with country: ' , string.endsWith('country'));
+/*
+    It gives boolean value true or false,
+    Whether the sentence ends with string ' . ' dot  or not.
+*/
 
+
+console.log('Is sentence include is: ' , string.includes('is'));
+/*
+    It gives boolean value true or false,
+    Whether the sentence includes the string 'is' or not.
+*/
 </div>
 
 
 </div>
 
-<div class="output-button">
+<div class="output-button" style="">
     <div class="">
 	<button class="button3" data-toggle="collapse" data-target="#console.log4" ><i class="fa fa-angle-double-down" aria-hidden="true"></i> Get output</button>
 </div>
 </div>
 
-<div class="collapse" id="console.log4">
+<div class="collapse" id="console.log4" style="">
   <div class="output-showing">
     <h5>OUTPUT</h5>
 
-    <h6>Delhi</h6>
-      <h6>Motihari</h6>
-      <h6>Delhi</h6>
+      <h6>Is sentence start with England:<span style="color:blue"> false</span></h6>
+      <h6>Is sentence ends with country:<span style="color:blue"> true</span></h6>
+
+      <h6>Is sentence includes is:<span style="color:blue"> true</span></h6>
+
+
       <p>This output will only showing the only string which is present in <span>"console.error('This is an error');".</span>
         When you try it yourself then goto your HTML page click right button on mouse and goto inspect
         and then goto console after that you able to see output of javascript console.
@@ -494,41 +506,67 @@ console.log(City);
 
 
 
-<div class="editor1">
-<div  id="editor" style="height:360px;">const City = 'Delhi';
-Console.log(City);
 
-{
-    //let City = 'Motihari';
-    City = 'Patna'
-    console.log(City);
 
-    /*
-     Thia All treated as Global Variable
-     Check Output
-    */
-}
 
-console.log(City);
+
+<h3 style="margin-bottom:-20px;margin-top:22px;font-family: 'Source Code Pro', monospace;">String <span>SOME MORE</span>:</h3>
+<div class="editor1" style="">
+<div  id="editor" style="height:780px;">let string = 'China is most populated country in the world.';
+
+console.log('Substring:' , string.substring(1,9));
+/*
+    It gives the output as substring.
+    According to given range.
+    this range start from 0 and end at n-1'
+    where n is last range which is given as 9.
+*/
+
+
+console.log('Slice:' , string.slice(0,4))
+//it is just like substring.
+
+
+console.log('Split space:' , string.split(' '));
+/*
+    It gives us a array element.
+    which is separated by some value.
+    those value passed into split function.
+*/
+
+console.log('Splits i:' , string.split('i'));
+//check note given below.
+
+console.log('Replace china with india:' , string.replace('China','india'));
+//it replace the 'China' with 'india'. check output.
+</div>
 
 </div>
 
-
-</div>
-
-<div class="output-button">
+<div class="output-button" style="">
     <div class="">
 	<button class="button3" data-toggle="collapse" data-target="#console.log9" ><i class="fa fa-angle-double-down" aria-hidden="true"></i> Get output</button>
 </div>
 </div>
 
-<div class="collapse" id="console.log9">
+<div class="collapse" id="console.log9" style="">
   <div class="output-showing">
     <h5>OUTPUT</h5>
 
-    <h6>Delhi</h6>
-      <h6>Patna</h6>
-      <h6>Patna</h6>
+      <h6>Substring: hina is</h6>
+      <h6>Slice: Chin</h6>
+      <h6>Split space: [<span style="color:red">"China"</span>, <span style="color:red">"is"</span>, <span style="color:red">"most"</span>,
+      <span style="color:red">"populated"</span>, <span style="color:red">"country"</span>,
+          <span style="color:red">"in"</span>, <span style="color:red">"the"</span>,
+      <span style="color:red">"world"</span>]</h6>
+
+
+      <h6>Split i: [<span style="color:red">"Ch"</span>, <span style="color:red">"na "</span>, <span style="color:red">"s most populated country "</span>,
+      <span style="color:red">"n the world."</span>]</h6>
+      <h6>Replace China with india: india is most populated country in the world.</h6>
+
+
+
       <p>This output will only showing the only string which is present in <span>"console.error('This is an error');".</span>
         When you try it yourself then goto your HTML page click right button on mouse and goto inspect
         and then goto console after that you able to see output of javascript console.
@@ -537,11 +575,116 @@ console.log(City);
 </div>
 
 
+                   <div class="content">
+                  <div class="note">
+       <p><span style="font-weight:bold;letter-spacing:2px;font-size:22px;">Note</span>
+           <i class="fa fa-fw fa-pencil" style="font-size:22px padding-right:10px;" aria-hidden="true">:</i>
+       The Split function separate the string like array element and element
+       separated by the particular string which is passed to split function.</p>
+    </div>
+              </div>
+
+
+<div class="content" style="margin-top:-10px;margin-bottom:10px;font-family: 'Cairo', sans-serif;border-left:7px solid orange;">
+    <h2>Back Ticks [` `]</h2>
+
+    <div class="content" style="font-family: 'Source Code Pro', monospace;list-style-type:none;">
+        <p>Back Ticks is used when if we want to write HTML code in JavaScript code</p>
+        <p>It is interesting to know how to use <span style="color:black ; font-weight:bold;">Back Ticks</span></p>
+    </div>
+</div>
+
+
+
+<h3 style="margin-bottom:-20px;margin-top:22px;font-family: 'Source Code Pro', monospace;">Date:</h3>
+<div class="editor1" style="">
+<div  id="editor1" style="height:520px;"><textarea><!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="todayDate()">GET TODAY DATE AND TIME</button>
+
+<h6 id="date"></h6>
+<script>
+
+let date;
+
+function todayDate () {
+   date = new Date();
+   document.getElementById('date').innerHTML = date;
+}
+
+console.log('DataType is '+(typeof date));
+
+</script>
+
+</body>
+</html></textarea></div>
+
+
+</div>
+
+<div class="output-button"  id="console.log12" >
+    <div class="">
+	<button class="button3" style="display:none;" data-toggle="collapse" data-target="#console.log12" ><i class="fa fa-angle-double-down" aria-hidden="true"></i> Get output</button>
+
+</div>
+</div>
+
+
+
+
+<h3 style="margin-bottom:-20px;margin-top:22px;font-family: 'Source Code Pro', monospace;">Back ticks:</h3>
+<div class="editor1" style="">
+<div  id="editor10" style="padding-top:-20px;height:310px;">function Add(num1,num2) {
+    return num1+num2;
+}
+
+var a= 100;
+var b = 20;
+
+const Sum = Add(a , b) ;
+
+console.log('Sum is ',Sum);
+
+console.log('DataType is '+(typeof Add));
+</div>
+
+
+</div>
+
+<div class="output-button" style="">
+    <div class="">
+	<button class="button3" data-toggle="collapse" data-target="#console.log10" ><i class="fa fa-angle-double-down" aria-hidden="true"></i> Get output</button>
+         <span style="padding-left:10px;"><a href="#" style="color:red"> Learn JS Function</a></span>
+</div>
+</div>
+
+<div class="collapse" id="console.log10" style="">
+  <div class="output-showing">
+    <h5>OUTPUT</h5>
+
+<h6>Sum is <span style="color:blue;">120</span></h6>
+      <h6>DataType is function</h6>
+      <p>This output will only showing the only string which is present in <span>"console.warn('This is warning');".</span>
+        When you try it yourself then goto your HTML page click right button on mouse and goto inspect
+        and then goto console after that you able to see output of javascript console.
+    </p>
+  </div>
+</div>
+
+
+<!-- there is no need of this code-->
+
+
+<!-- here un unusal code is ended-->
+
+
 
                     <div class="" style="margin-bottom:40px; margin-top:10px;">
                      <div class="" style="display:flex">
-                    <a href="{% url 'JavascriptIntro' %}" ><button  class="button card3"><i class='fa fa-angle-double-left'></i> Prev</button></a>
-                         <a href="{% url 'jsDatatypes' %}"><button class="button card3 lef">Next <i class='fa fa-angle-double-right'></i></button></a>
+                     <a href="{% url 'jsString' %}" ><button  class="button card3"><i class='fa fa-angle-double-left'></i> Prev</button></a>
+                    <a href="#"><button  class="button card3 lef">Next <i class='fa fa-angle-double-right'></i></button></a>
                 </div>
                 </div>
 
@@ -580,7 +723,7 @@ console.log(City);
 <path fill="#659AD3" d="M115.4 30.7l-48.3-27.8c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-48 27.9c-1.7 1-2.9 3.5-2.9 5.4v55.7c0 1.1.2 2.4 1 3.5l106.8-62c-.6-1.2-1.5-2.1-2.4-2.7z"></path><path fill="#03599C" d="M10.7 95.3c.5.8 1.2 1.5 1.9 1.9l48.2 27.9c.8.5 1.9.7 3.1.7 1.2 0 2.3-.3 3.1-.7l48-27.9c1.7-1 2.9-3.5 2.9-5.4v-55.7c0-.9-.1-1.9-.6-2.8l-106.6 62z"></path><path fill="#fff" d="M85.3 76.1c-4.2 7.4-12.2 12.4-21.3 12.4-13.5 0-24.5-11-24.5-24.5s11-24.5 24.5-24.5c9.1 0 17.1 5 21.3 12.5l13-7.5c-6.8-11.9-19.6-20-34.3-20-21.8 0-39.5 17.7-39.5 39.5s17.7 39.5 39.5 39.5c14.6 0 27.4-8 34.2-19.8l-12.9-7.6z"></path>
 </svg>
   <div class="card-body">
-    <a href="{% url 'Cintro' %}"> <button type="button" class="btn btn-primary card-text" style="margin-left:4px;">C Language</button></a>
+      <a href="{% url 'Cintro' %}"><button type="button" class="btn btn-primary card-text" style="margin-left:4px;">C Language</button></a>
   </div>
 </div>
 

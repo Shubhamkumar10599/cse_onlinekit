@@ -27,6 +27,9 @@ def jsTypeConversion(requests):
 def jsString(requests):
     return render(requests,'JavascriptFiles/js String.html',{})
 
+def jsArray(requests):
+    return render(requests,'JavascriptFiles/js Array.html',{})
+
 
 
 def Home(requests):

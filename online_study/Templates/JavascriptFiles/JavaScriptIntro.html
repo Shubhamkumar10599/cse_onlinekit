@@ -57,19 +57,17 @@
      <a class="lg11" href="{% url 'Home' %}"><i class="fa fa-fw fa-home" aria-hidden="true"></i> Home</a>
 
          <a href="{% url 'Cintro' %}" class="navItem lg9">C</a>
-           <a href="#" class="navItem lg8">C++</a>
-               <a href="#" class="navItem lg6">Java</a>
-                 <a href="#" class="navItem lg5">Python</a>
-                   <a href="#" class="navItem lg7">PHP</a>
-                   <a href="#" class="navItem lg3">HTML</a>
-                <a href="{% url 'JavascriptIntro' %}" class="active lg2">JavaScript</a>
-               <a href="#" class="navItem lg2">SQL</a>
-            <a href="#" class="navItem lg2">JQuery</a>
-         <a href="#" class="navItem lg1">Boostrap</a>
-      <a href="#" class="navItem lg1">Android</a>
-
-     <a href="#" class="navItem lg7">GATE</a>
-      <a href="#" class="navItem lg9">Exersize</a>
+           <a href="{% url 'Cppintro' %}" class="navItem lg8">C++</a>
+               <a href="{% url 'Javaintro' %}" class="navItem lg6">Java</a>
+                 <a href="{% url 'Pythonintro' %}" class="navItem lg5">Python</a>
+                   <a href="{% url 'Djangointro' %}" class="navItem lg6">Django</a>
+                   <a href="{% url 'HTMLintro' %}" class="navItem lg3">HTML</a>
+           <a href="{% url 'Cssintro' %}" class="navItem lg2">CSS</a>
+                 <a href="{% url 'JavascriptIntro' %}" class="navItem lg2 active">JavaScript</a>
+               <a href="{% url 'Sqlintro' %}" class="navItem lg2">SQL</a>
+         <a href="{% url 'Gatesyl' %}" class="navItem lg7">GATE</a>
+<a href="{% url 'Quiz' %}" class="navItem lg7">Quiz</a>
+      <a href="{% url 'Exercise' %}" class="navItem lg9">Exersize</a>
 
 
 
@@ -82,19 +80,19 @@
 
 
     <a href="{% url 'Cintro' %}">C</a>
-      <a href="#">C++</a>
-    <a href="#">Java</a>
+      <a href="{% url 'Cppintro' %}">C++</a>
+    <a href="{% url 'Javaintro' %}">Java</a>
+       <a href="{% url 'Pythonintro' %}">Python</a>
+      <a href="{% url 'Djangointro' %}">Django</a>
+       <a href="{% url 'HTMLintro' %}">HTML</a>
+      <a href="{% url 'Cssintro' %}">CSS</a>
     <a href="{% url 'JavascriptIntro' %}">JavaScript</a>
-      <a href="#">JQuery</a>
-      <a href="#">Boostrap</a>
-    <a href="#">Python</a>
-    <a href="#">PHP</a>
-      <a href="#">SQL</a>
-    <a href="#">Android</a>
-    <a href="#">GATE</a>
-      <a href="#">Exercise</a>
-    <a href="#">Quiz</a>
-    <a href="#">Examples</a>
+      <a href="{% url 'Sqlintro' %}">SQL</a>
+    <a href="{% url 'Gatesyl' %}">GATE</a>
+      <a href="{% url 'Exercise' %}">Exercise</a>
+    <a href="{% url 'Quiz' %}">Quiz</a>
+
+
   </div>
   </div>
      <a class="active icon1" href="{% url 'Home' %}"><i class="fa fa-fw fa-home" aria-hidden="true"></i></a>
@@ -104,6 +102,11 @@
     <a href="#" class="navItem float-right lg9"><i class="fa fa-fw fa-user-o" aria-hidden="true"></i> Profile</a>
           <a href ="{% url 'loginPage' %}" class="navItem float-right lg9" ><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
 
+
+
+
+         <a href="#" class ="icon"><i class="fa fa-fw fa-user peach-gradient"></i></a>
+         <a  class ="icon" href ="{% url 'loginPage' %}"><i class="fa fa-sign-in"></i></a>
 
 
 
@@ -127,7 +130,7 @@
 
              <div class="row">
 
-    <div style="margin-top:-30px;margin-left:29px; margin-bottom:10px; color: #32a3b1;" class="lgo" onclick="location='{% url 'Home' %}'" title="HEY! jango">
+    <div style="margin-top:-30px;margin-left:29px; margin-bottom:10px; color: #32a3b1;" class="lgo" onclick="location='{% url 'Home' %}'" title="jangoCS Logo">
         <h1>jango<span>CS</span></h1>
     </div>
 
@@ -144,6 +147,7 @@
               <a href="{% url 'jsDatatypes' %}" class="">JS DataTypes</a>
               <a href="{% url 'jsTypeConversion' %}" class="">JS TypeConversion</a>
                  <a href="{% url 'jsString' %}" class="">JS String</a>
+ <a href="{% url 'jsArray' %}" class="">JS Array</a>
 
 
 
@@ -154,7 +158,7 @@
 
         <div class="row">
 
-    <div style="margin-top:-30px;margin-left:29px; margin-bottom:10px; color: #32a3b1;" class="lgo" onclick="location='{% url 'Home' %}'" title="HEY! jango">
+    <div style="margin-top:-30px;margin-left:29px; margin-bottom:10px; color: #32a3b1;" class="lgo" onclick="location='{% url 'Home' %}'" title="jangoCS Logo">
         <h1>jango<span>CS</span></h1>
     </div>
 
@@ -176,6 +180,10 @@
         <a href="{% url 'jsDatatypes' %}" class="">JS DataTypes</a>
                 <a href="{% url 'jsTypeConversion' %}" class="">JS TypeConversion</a>
               <a href="{% url 'jsString' %}" class="">JS String</a>
+ <a href="{% url 'jsArray' %}" class="">JS Array</a>
+
+
+
 
 
       </div>
@@ -492,7 +500,7 @@ alertFunction();</div>
 <path fill="#D26383" d="M115.4 30.7l-48.3-27.8c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-48 27.9c-1.7 1-2.9 3.5-2.9 5.4v55.7c0 1.1.2 2.4 1 3.5l106.8-62c-.6-1.2-1.5-2.1-2.4-2.7z"></path><path fill="#9C033A" d="M10.7 95.3c.5.8 1.2 1.5 1.9 1.9l48.2 27.9c.8.5 1.9.7 3.1.7 1.2 0 2.3-.3 3.1-.7l48-27.9c1.7-1 2.9-3.5 2.9-5.4v-55.7c0-.9-.1-1.9-.6-2.8l-106.6 62z"></path><path fill="#fff" d="M85.3 76.1c-4.2 7.4-12.2 12.4-21.3 12.4-13.5 0-24.5-11-24.5-24.5s11-24.5 24.5-24.5c9.1 0 17.1 5 21.3 12.5l13-7.5c-6.8-11.9-19.6-20-34.3-20-21.8 0-39.5 17.7-39.5 39.5s17.7 39.5 39.5 39.5c14.6 0 27.4-8 34.2-19.8l-12.9-7.6z"></path><path d="M82.1 61.8h5.2v-5.3h4.4v5.3h5.3v4.4h-5.3v5.2h-4.4v-5.2h-5.2v-4.4zM100.6 61.8h5.2v-5.3h4.4v5.3h5.3v4.4h-5.3v5.2h-4.4v-5.2h-5.2v-4.4z"></path>
 </svg>
   <div class="card-body">
-    <button type="button" class="btn btn-primary card-text" style="margin-left:4px">C++ </button>
+      <a href="{% url 'Cppintro' %}"><button type="button" class="btn btn-primary card-text" style="margin-left:4px">C++ </button></a>
   </div>
 </div>
 

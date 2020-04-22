@@ -986,8 +986,8 @@ height:160px;
 
 @media only screen and (max-width: 488px) {
 
-h1{
-font-size:20px;
+.header-tag h1{
+font-size:30px;
 }
 
 .definition{

@@ -211,6 +211,10 @@ margin-left:60px;
         display: block;
         float: left;
     }
+    a.icon1{
+    display:block;
+    float:left;
+    }
 }
 
 @media only screen and (max-width: 654px) {

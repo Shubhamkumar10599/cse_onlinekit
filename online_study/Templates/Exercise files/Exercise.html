@@ -1,10 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-Exercise
-</body>
-</html>
+{% extends 'Basics/Basic javaScript.html' %}
+
+{% load static %}
+
+{% block title %} javaScript intro {% endblock %}
+
+{% block javaScript %} <a href="{% url 'JavascriptIntro' %}" class="navItem lg2 active">JavaScript</a>{% endblock %}
+
+{% block jsintro1 %}<a href="{% url 'JavascriptIntro' %}" class="active1">JS Introduction</a>{% endblock %}
+{% block jsintro2 %}<a href="{% url 'JavascriptIntro' %}" class="active1">JS Introduction</a>{% endblock %}
+
+
+{% block header-tag %} Introduction to javaScript {% endblock %}
+
+{% block prev-next %}
+<a href="#" ><button  class="button card3"><i class='fa fa-angle-double-left'></i> Prev</button></a>
+<a href="{% url 'javascriptVariables' %}"><button  class="button card3 lef">Next <i class='fa fa-angle-double-right'></i></button></a>
+{% endblock %}
+
+
+
+{% block definition %}
+
+
+
+{% endblock %}
+
+
+
+{% block prev-next2 %}
+<a href="#" ><button  class="button card3"><i class='fa fa-angle-double-left'></i> Prev</button></a>
+<a href="{% url 'javascriptVariables' %}"><button  class="button card3 lef">Next <i class='fa fa-angle-double-right'></i></button></a>
+{% endblock %}
+
+{% block jsfiles %}<script type="text/javascript" src="{% static 'js/jseditor.js' %}"></script>{% endblock %}

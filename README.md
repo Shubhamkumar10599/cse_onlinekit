@@ -12,7 +12,7 @@ home page:
 
 login page:
 
-![Screenshot (251)](https://user-images.githubusercontent.com/59762599/119366969-203c3180-bccf-11eb-9c6f-0c33a3bbb327.png
+![Screenshot (251)](https://user-images.githubusercontent.com/59762599/119366969-203c3180-bccf-11eb-9c6f-0c33a3bbb327.png)
 
 subwise topic:
 
